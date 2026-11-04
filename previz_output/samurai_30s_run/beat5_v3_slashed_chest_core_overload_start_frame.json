@@ -1,0 +1,19 @@
+{
+  "mediaId": "22a57545-1393-48cb-845f-c6274ad6ae59",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat5_v3_slashed_chest_core_overload_start_frame.png",
+  "refIdsUsed": [
+    "26fb13b5-691b-4422-9455-842869f799f9",
+    "a0c4766f-7c90-4408-bee1-fc945d93cfa5"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 72,
+      "helmetDetected": false,
+      "backTurnedToEnemyDetected": false,
+      "splitGridDetected": false,
+      "reason": "Single widescreen cinematic image matching Kuroryu reference details. Kenji is not present in the frame."
+    }
+  }
+}

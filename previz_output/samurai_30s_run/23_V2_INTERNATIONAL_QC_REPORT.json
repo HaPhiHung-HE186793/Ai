@@ -1,13 +1,13 @@
 {
-  "masterVideoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/20_SAMURAI_V2_SENIOR_ENGINE_MASTER.mp4",
+  "masterVideoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/60_SAMURAI_V6_UNIFIED_6GATE_MASTER.mp4",
   "qcGridPaths": [
     "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/22_V2_1FPS_QC_GRID_01.png",
     "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/22_V2_1FPS_QC_GRID_02.png"
   ],
   "broadcastAudioTelemetry": {
     "standard": "EBU R128 / Netflix Cinema Spec (-16.0 LUFS, <= -1.0 dBTP)",
-    "integratedLoudnessLufs": -17.1,
-    "truePeakDbtp": -3.8,
+    "integratedLoudnessLufs": -17.2,
+    "truePeakDbtp": -4.1,
     "clippingDetected": false,
     "status": "PASS_BROADCAST_SPEC"
   },
@@ -19,19 +19,14 @@
   },
   "shotsIncluded": [
     {
-      "shotId": "beat1_ots_arrival_locked",
-      "trimWindow": "0s -> 6.2s",
-      "durationSec": 6.2
+      "shotId": "beat1_v6_winged_dragon_intact_torii_direct_fireball",
+      "trimWindow": "0s -> 5.5s",
+      "durationSec": 5.5
     },
     {
-      "shotId": "beat2_v2_ecu_unbroken_katana_guard",
-      "trimWindow": "0.4s -> 5.4s",
-      "durationSec": 5
-    },
-    {
-      "shotId": "beat3_lowangle_dragon_stomp_locked",
-      "trimWindow": "0s -> 4s",
-      "durationSec": 4
+      "shotId": "beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves",
+      "trimWindow": "0s -> 4.3s",
+      "durationSec": 4.3
     },
     {
       "shotId": "beat4_v2_charge_directly_at_dragon",
@@ -39,14 +34,19 @@
       "durationSec": 5.2
     },
     {
-      "shotId": "beat5_dragon_lightning_overcharge_locked",
-      "trimWindow": "4.4s -> 8s",
-      "durationSec": 3.6
+      "shotId": "beat4_v6_winged_dragon_3d_cracked_core_overload",
+      "trimWindow": "0s -> 4.2s",
+      "durationSec": 4.2
     },
     {
-      "shotId": "beat6_v2_bareheaded_apex_clash_victory",
-      "trimWindow": "0.2s -> 7.6s",
-      "durationSec": 7.4
+      "shotId": "beat5_v6_winged_dragon_2m_claw_clash_courtyard",
+      "trimWindow": "0s -> 4.6s",
+      "durationSec": 4.6
+    },
+    {
+      "shotId": "beat6_v6_winged_dragon_defeat_kneel_courtyard_finale",
+      "trimWindow": "0s -> 6.6s",
+      "durationSec": 6.6
     }
   ]
 }

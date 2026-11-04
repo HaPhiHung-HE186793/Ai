@@ -1,0 +1,20 @@
+{
+  "mediaId": "61ee9d54-501f-4d93-b968-1df1dbf537a4",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat5_v3_ruptured_chest_reactor_no_sword_end_frame.png",
+  "refIdsUsed": [
+    "89e99b9d-9050-4974-8a61-3a34cd056aac",
+    "26fb13b5-691b-4422-9455-842869f799f9",
+    "a0c4766f-7c90-4408-bee1-fc945d93cfa5"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 72,
+      "helmetDetected": false,
+      "backTurnedToEnemyDetected": false,
+      "splitGridDetected": false,
+      "reason": "Single cinematic shot accurately depicts Kuroryu matching reference armor and energy core. Kenji is not present, avoiding blocking and helmet violations."
+    }
+  }
+}

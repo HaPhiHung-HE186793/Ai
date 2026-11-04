@@ -257,8 +257,14 @@ export class DirectorCompilerEngine {
         `Shot ${shotSpec.shotId} thiếu Environment Anchor "${shotSpec.environmentId}".`
       );
     }
-    if (!referenceIds.includes(envAnchor.mediaId) && referenceIds.length < 3) {
+    if (!shotSpec.excludeEnvRefFromImageGeneration && !referenceIds.includes(envAnchor.mediaId) && referenceIds.length < 3) {
       referenceIds.push(envAnchor.mediaId);
+    }
+    if (shotSpec.masterSceneCompositeId && !referenceIds.includes(shotSpec.masterSceneCompositeId)) {
+      referenceIds.unshift(shotSpec.masterSceneCompositeId);
+    }
+    if (envAnchor.negativeLockEn) {
+      negativeLocks.push(envAnchor.negativeLockEn);
     }
 
     // Kiểm tra bất biến (Hard-Code Assertion): Không bao giờ cho phép mảng referenceIds rỗng!
@@ -268,13 +274,14 @@ export class DirectorCompilerEngine {
 
     const identityClause = positiveIdentityBlocks.join(' ');
     const negativeClause = negativeLocks.join(' ');
+    const envClause = shotSpec.cameraSpecificEnvOverrideEn || envAnchor.identityLockEn || '';
 
     const startKeyframePrompt = [
       `16:9 full-resolution cinematic storyboard frame (SINGLE UNSPLIT WIDESCREEN FRAME, NO GRID, NO COLLAGE).`,
       `Camera & Lens: ${shotSpec.cameraLens}.`,
       `[MANDATORY IDENTITY & COSTUME LOCK]: ${identityClause}`,
       `[START POSE (t=0.0s)]: ${shotSpec.startFrameActionEn}`,
-      `[ENVIRONMENT LOCK]: ${envAnchor.identityLockEn || ''}`,
+      `[ENVIRONMENT LOCK]: ${envClause}`,
       `[STRICT NEGATIVE CONTINUITY LOCK]: ${negativeClause}. 8k photorealistic live-action cinema.`,
     ]
       .join(' ')
@@ -283,10 +290,10 @@ export class DirectorCompilerEngine {
     const endKeyframePrompt = shotSpec.endFrameActionEn
       ? [
           `16:9 full-resolution cinematic storyboard frame (SINGLE UNSPLIT WIDESCREEN FRAME, NO GRID, NO COLLAGE).`,
-          `Camera & Lens: ${shotSpec.cameraLens} (IDENTICAL camera angle, lens focal length, and lighting as Start Frame).`,
+          `Camera & Lens: ${shotSpec.cameraLens} (IDENTICAL camera angle, lens focal length, background courtyard architecture, and lighting as Start Frame).`,
           `[MANDATORY IDENTITY & COSTUME LOCK]: ${identityClause}`,
           `[END POSE (t=8.0s)]: ${shotSpec.endFrameActionEn}`,
-          `[ENVIRONMENT LOCK]: ${envAnchor.identityLockEn || ''}`,
+          `[ENVIRONMENT LOCK]: ${envClause}`,
           `[STRICT NEGATIVE CONTINUITY LOCK]: ${negativeClause}. 8k photorealistic live-action cinema.`,
         ]
           .join(' ')
@@ -327,14 +334,16 @@ export class DirectorCompilerEngine {
       refImages.push({ base64: frameB64, mimeType: 'image/png' });
 
       const checkPrompt = [
-        `You are a strict Hollywood Continuity & Spatial Blocking Supervisor performing a Pre-Flight Keyframe Audit for "${frameName}".`,
-        `Compare the candidate keyframe (last image) against the Character/Creature Reference Sheets (first images).`,
-        `Verify these 4 strict rules:`,
-        `1. If Samurai KENJI is visible, he MUST be BAREHEADED with tied-back dark hair (NO samurai helmet / NO kabuto / NO mask).`,
-        `2. SPATIAL BLOCKING & 180-DEGREE AXIS: If both Samurai KENJI and Mecha-Dragon KURORYU are in the frame, KENJI MUST be facing TOWARD the Mecha-Dragon in combat engagement (NEVER facing the camera with his back turned to the dragon as if running away!).`,
-        `3. The frame must be a single widescreen cinematic scene (NOT a 3-panel split grid).`,
-        `4. Subject proportions and armor colors must match the reference sheets.`,
-        `Reply ONLY with valid JSON: {"pass": true, "score": 96, "helmetDetected": false, "backTurnedToEnemyDetected": false, "splitGridDetected": false, "reason": "..."}`,
+        `You are a strict Hollywood Continuity, Creature Anatomy & Production Design Supervisor performing a Pre-Flight Keyframe Audit for "${frameName}".`,
+        `Compare the candidate keyframe (last image) against the Reference Sheets (first images).`,
+        `Verify these 6 strict international rules:`,
+        `1. COSTUME & MAKEUP: If Samurai KENJI is visible, he MUST be BAREHEADED with tied-back dark hair (NO helmet, NO kabuto) and have a CLEAN UNINJURED FACE (NO bleeding slash wound across his eye/cheek).`,
+        `2. CREATURE ANATOMY (DRAGON WINGS): If Mecha-Dragon KURORYU is visible in full/medium shot, it MUST have TWO LARGE BIOMECHANICAL DRAGON WINGS on its back matching the reference sheet (NEVER wingless!).`,
+        `3. VFX BATTLE DAMAGE PHYSICS: On KURORYU, energy/smoke must emit physically from its circular chest reactor core and armor seams (NEVER a fake 2D straight orange laser bar/line pasted across the outside of its torso).`,
+        `4. SPATIAL BLOCKING & 180-DEGREE AXIS: If both KENJI and KURORYU are in the frame, KENJI must be on Screen-Left facing Right toward KURORYU on Screen-Right.`,
+        `5. PRODUCTION DESIGN / SET CONTINUITY: The background must be the enclosed Kyoto stone courtyard flanked by single-story dark-wood shrine buildings and stone lanterns (NO forest woods, NO multiple Torii gate tunnels, NO Torii gate behind Kenji's back in close-ups).`,
+        `6. SINGLE WIDESCREEN FRAME: Must not be a multi-panel split grid.`,
+        `Reply ONLY with valid JSON: {"pass": true, "score": 96, "helmetDetected": false, "missingDragonWingsDetected": false, "fakeSlashLineDetected": false, "setMismatchDetected": false, "backTurnedToEnemyDetected": false, "splitGridDetected": false, "reason": "..."}`,
       ].join(' ');
 
       const res = await this.callFlow('generate.text', [{ prompt: checkPrompt, images: refImages.slice(0, 3) }], 2);
@@ -346,10 +355,13 @@ export class DirectorCompilerEngine {
         const passed =
           Boolean(parsed.pass) &&
           !parsed.helmetDetected &&
+          !parsed.missingDragonWingsDetected &&
+          !parsed.fakeSlashLineDetected &&
+          !parsed.setMismatchDetected &&
           !parsed.backTurnedToEnemyDetected &&
           !parsed.splitGridDetected;
         console.log(
-          `      🔍 [Pre-Flight Vision Gate | ${frameName}] ${passed ? '✅ PASS' : '❌ FAIL'} (Score: ${parsed.score || 95}/100 | Helmet: ${Boolean(parsed.helmetDetected)} | BackTurned: ${Boolean(parsed.backTurnedToEnemyDetected)} | Note: ${parsed.reason || 'OK'})`
+          `      🔍 [Pre-Flight Vision Gate | ${frameName}] ${passed ? '✅ PASS' : '❌ FAIL'} (Score: ${parsed.score || 95}/100 | WingsOK: ${!parsed.missingDragonWingsDetected} | SetOK: ${!parsed.setMismatchDetected} | Note: ${parsed.reason || 'OK'})`
         );
         return { pass: passed, details: parsed };
       }
@@ -452,19 +464,20 @@ export class DirectorCompilerEngine {
 
     const compiled = this.compileShotPrompts(shotSpec);
 
-    // 1. Tạo Start Frame (bắt buộc truyền đủ Reference IDs gốc)
-    const startFrame = await this.synthesizeLockedKeyframe(
-      shotSpec,
-      'start_frame',
-      compiled.startKeyframePrompt,
-      compiled.referenceIds,
-      Boolean(shotSpec.forceRerender)
-    );
+    // 1. Tạo hoặc tái sử dụng Start Frame đã được Phòng ban 03 (ASC DP) ký duyệt
+    const startFrame =
+      shotSpec._approvedStartFrame ||
+      (await this.synthesizeLockedKeyframe(
+        shotSpec,
+        'start_frame',
+        compiled.startKeyframePrompt,
+        compiled.referenceIds,
+        Boolean(shotSpec.forceRerender)
+      ));
 
-    // 2. Tạo End Frame (để khóa đầu cuối cho Veo 3.1 chống lặp hành động & chống mọc thêm đạo cụ)
-    let endFrame = null;
-    if (compiled.endKeyframePrompt) {
-      // Truyền Start Frame + Character/Creature Sheet để End Frame giữ nguyên 100% góc máy và phục trang!
+    // 2. Tạo hoặc tái sử dụng End Frame đã được Phòng ban 03 (ASC DP) ký duyệt
+    let endFrame = shotSpec._approvedEndFrame || null;
+    if (!endFrame && compiled.endKeyframePrompt) {
       const endRefIds = [startFrame.mediaId, ...compiled.referenceIds].slice(0, 3);
       endFrame = await this.synthesizeLockedKeyframe(
         shotSpec,

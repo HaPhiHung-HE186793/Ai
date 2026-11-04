@@ -1,0 +1,23 @@
+{
+  "mediaId": "424be7f3-ad7c-40da-867a-7e8e4df9b2d7",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat4_v6_winged_dragon_3d_cracked_core_overload_start_frame.png",
+  "refIdsUsed": [
+    "e9b05664-d2eb-405d-8c50-1a56cc2b2359",
+    "46351645-0b10-4c90-8aee-9aefa18add2a",
+    "26fb13b5-691b-4422-9455-842869f799f9"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 96,
+      "helmetDetected": false,
+      "missingDragonWingsDetected": false,
+      "fakeSlashLineDetected": false,
+      "setMismatchDetected": false,
+      "backTurnedToEnemyDetected": false,
+      "splitGridDetected": false,
+      "reason": "The keyframe fully complies with all six rules: Kenji is bareheaded with clean facial features positioning on screen-left facing right; Kuroryu features full biomechanical dragon wings and physical volumetric energy/smoke bursting from its chest core on screen-right; set continuity and single widescreen aspect ratio are correctly maintained."
+    }
+  }
+}

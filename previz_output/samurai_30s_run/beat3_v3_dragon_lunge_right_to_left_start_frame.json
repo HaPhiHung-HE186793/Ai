@@ -1,0 +1,20 @@
+{
+  "mediaId": "1cb417d0-e0b7-429f-bfad-3223f4d07d61",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat3_v3_dragon_lunge_right_to_left_start_frame.png",
+  "refIdsUsed": [
+    "46351645-0b10-4c90-8aee-9aefa18add2a",
+    "26fb13b5-691b-4422-9455-842869f799f9",
+    "a0c4766f-7c90-4408-bee1-fc945d93cfa5"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 74,
+      "helmetDetected": false,
+      "backTurnedToEnemyDetected": false,
+      "splitGridDetected": false,
+      "reason": "Keyframe strictly complies with all guidelines: Kenji is bareheaded, faces the enemy directly in a single widescreen frame, and subject details align with reference sheets."
+    }
+  }
+}

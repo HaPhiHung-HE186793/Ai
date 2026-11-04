@@ -1,0 +1,19 @@
+{
+  "mediaId": "e486cfc9-8c47-49fc-a123-2c1184133705",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat2_v3_ecu_rigid_45deg_katana_start_frame.png",
+  "refIdsUsed": [
+    "46351645-0b10-4c90-8aee-9aefa18add2a",
+    "a0c4766f-7c90-4408-bee1-fc945d93cfa5"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 72,
+      "helmetDetected": false,
+      "backTurnedToEnemyDetected": false,
+      "splitGridDetected": false,
+      "reason": "Character features, hair, armor detailing, and glowing katana match reference sheet specifications accurately. Format is a single cinematic widescreen frame without blocking conflicts."
+    }
+  }
+}

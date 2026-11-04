@@ -1,0 +1,20 @@
+{
+  "mediaId": "57d12a7f-3e62-4f39-9b95-725c95845760",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat1_v4_torii_shatter_and_direct_fireball_end_frame.png",
+  "refIdsUsed": [
+    "3a8b8e91-a84b-4639-967f-3e666d21d097",
+    "46351645-0b10-4c90-8aee-9aefa18add2a",
+    "26fb13b5-691b-4422-9455-842869f799f9"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 78,
+      "helmetDetected": false,
+      "backTurnedToEnemyDetected": false,
+      "splitGridDetected": false,
+      "reason": "All visual continuity rules pass. Kenji is bareheaded and facing the dragon directly in a single cinematic widescreen frame, with character designs accurately reflecting the reference sheets."
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "mediaId": "1f1b5c13-d6f9-4fb7-9d22-46032746f6c5",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat5_v6_winged_dragon_2m_claw_clash_courtyard_start_frame.png",
+  "refIdsUsed": [
+    "e9b05664-d2eb-405d-8c50-1a56cc2b2359",
+    "46351645-0b10-4c90-8aee-9aefa18add2a",
+    "26fb13b5-691b-4422-9455-842869f799f9"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 98,
+      "helmetDetected": false,
+      "missingDragonWingsDetected": false,
+      "fakeSlashLineDetected": false,
+      "setMismatchDetected": false,
+      "backTurnedToEnemyDetected": false,
+      "splitGridDetected": false,
+      "reason": "The keyframe complies with all continuity and production rules. Kenji is bareheaded on screen-left facing right, Kuroryu features fully intact biomechanical wings and realistic volumetric smoke/energy from its central core, and the set features the correct stone courtyard with shrine buildings and stone lanterns."
+    }
+  }
+}

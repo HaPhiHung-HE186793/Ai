@@ -20,7 +20,7 @@
       "configHash": "49af44848a0d73e0",
       "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/shot1_8s_ots_arrival.mp4",
       "trimStartSec": 0,
-      "trimEndSec": 6.2
+      "trimEndSec": 5.5
     },
     "beat2_ecu_single_katana_draw_locked": {
       "locked": true,
@@ -54,12 +54,10 @@
     },
     "beat6_v2_bareheaded_apex_clash_victory": {
       "locked": true,
-      "configHash": "207a4620309dfc8c",
+      "configHash": "bdf61f797a11c08b",
       "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat6_v2_bareheaded_apex_clash_victory_veo31_raw8s.mp4",
-      "startFrameMediaId": "4b710fa7-6639-4304-bcca-18f5cc3ceb76",
-      "endFrameMediaId": "2b82ae22-821f-4156-af69-42e6287006ce",
       "trimStartSec": 0.2,
-      "trimEndSec": 7.6
+      "trimEndSec": 7.4
     },
     "beat2_v2_ecu_unbroken_katana_guard": {
       "locked": true,
@@ -72,13 +70,104 @@
     },
     "beat4_v2_charge_directly_at_dragon": {
       "locked": true,
-      "configHash": "549d8ca257c110ce",
+      "configHash": "80b2226c6daf5e7e",
       "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat4_v2_charge_directly_at_dragon_veo31_raw8s.mp4",
-      "startFrameMediaId": "e9b05664-d2eb-405d-8c50-1a56cc2b2359",
-      "endFrameMediaId": "567c3919-482e-4ca1-96a9-d2adffcb51d1",
       "trimStartSec": 0.2,
       "trimEndSec": 5.4
+    },
+    "beat2_v3_ecu_rigid_45deg_katana": {
+      "locked": true,
+      "configHash": "88950bb348b3b701",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat2_v3_ecu_rigid_45deg_katana_veo31_raw8s.mp4",
+      "trimStartSec": 0.2,
+      "trimEndSec": 4.7
+    },
+    "beat3_v3_dragon_lunge_right_to_left": {
+      "locked": true,
+      "configHash": "3e299501cc4671c8",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat3_v3_dragon_lunge_right_to_left_veo31_raw8s.mp4",
+      "trimStartSec": 0.2,
+      "trimEndSec": 4.7
+    },
+    "beat5_v3_slashed_chest_core_overload": {
+      "locked": true,
+      "configHash": "3713e609c7f5af35",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat5_v3_slashed_chest_core_overload_veo31_raw8s.mp4",
+      "startFrameMediaId": "22a57545-1393-48cb-845f-c6274ad6ae59",
+      "endFrameMediaId": "b1609284-d0b1-417e-80f5-b53db4122cb2",
+      "trimStartSec": 0.2,
+      "trimEndSec": 4.2
+    },
+    "beat5_v3_ruptured_chest_reactor_no_sword": {
+      "locked": true,
+      "configHash": "ec5cd45863211959",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat5_v3_ruptured_chest_reactor_no_sword_veo31_raw8s.mp4",
+      "trimStartSec": 0.2,
+      "trimEndSec": 4.2
+    },
+    "beat1_v4_torii_shatter_and_direct_fireball": {
+      "locked": true,
+      "configHash": "dcffa39a61dd0000",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat1_v4_torii_shatter_and_direct_fireball_veo31_raw8s.mp4",
+      "startFrameMediaId": "3a8b8e91-a84b-4639-967f-3e666d21d097",
+      "endFrameMediaId": "57d12a7f-3e62-4f39-9b95-725c95845760",
+      "trimStartSec": 0,
+      "trimEndSec": 5.5
+    },
+    "beat1_v5_in_front_of_intact_torii_direct_fireball": {
+      "locked": true,
+      "configHash": "b6d681f14165163f",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat1_v5_in_front_of_intact_torii_direct_fireball_veo31_raw8s.mp4",
+      "startFrameMediaId": "17dee56c-80f3-464a-8a72-90b7a40561be",
+      "endFrameMediaId": "2125534f-23e3-453c-9a79-414d1c15c722",
+      "trimStartSec": 0,
+      "trimEndSec": 5.5
+    },
+    "beat1_v6_winged_dragon_intact_torii_direct_fireball": {
+      "locked": true,
+      "configHash": "1d57e27d881a89c4",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat1_v6_winged_dragon_intact_torii_direct_fireball_veo31_raw8s.mp4",
+      "startFrameMediaId": "47aa9925-118e-48c4-877b-e7ef9eef8460",
+      "endFrameMediaId": "35f2eb08-00c9-4911-97e8-37a2521b0cb2",
+      "trimStartSec": 0,
+      "trimEndSec": 5.5
+    },
+    "beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves": {
+      "locked": true,
+      "configHash": "79b86cb361869617",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves_veo31_raw8s.mp4",
+      "startFrameMediaId": "9e818a6c-346a-4f42-a07c-738531fdf682",
+      "endFrameMediaId": "83b861a4-4787-49ae-9a51-253853cc8617",
+      "trimStartSec": 0,
+      "trimEndSec": 4.3
+    },
+    "beat4_v6_winged_dragon_3d_cracked_core_overload": {
+      "locked": true,
+      "configHash": "9a17124d0e927d77",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat4_v6_winged_dragon_3d_cracked_core_overload_veo31_raw8s.mp4",
+      "startFrameMediaId": "424be7f3-ad7c-40da-867a-7e8e4df9b2d7",
+      "endFrameMediaId": "7c3b902c-938e-4fe6-99d1-6a8f9ad1c2e3",
+      "trimStartSec": 0,
+      "trimEndSec": 4.2
+    },
+    "beat5_v6_winged_dragon_2m_claw_clash_courtyard": {
+      "locked": true,
+      "configHash": "67c76c4a7ecc8231",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat5_v6_winged_dragon_2m_claw_clash_courtyard_veo31_raw8s.mp4",
+      "startFrameMediaId": "1f1b5c13-d6f9-4fb7-9d22-46032746f6c5",
+      "endFrameMediaId": "e3e9e903-6794-4756-ac8c-397a1bc05619",
+      "trimStartSec": 0,
+      "trimEndSec": 4.6
+    },
+    "beat6_v6_winged_dragon_defeat_kneel_courtyard_finale": {
+      "locked": true,
+      "configHash": "c2d30fbc4d00f064",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat6_v6_winged_dragon_defeat_kneel_courtyard_finale_veo31_raw8s.mp4",
+      "startFrameMediaId": "0beb15aa-10fd-4ad9-b33c-d5c3034e0dc5",
+      "endFrameMediaId": "7d50f426-3a47-40e1-b17a-5ab9b7fc20ca",
+      "trimStartSec": 0,
+      "trimEndSec": 6.6
     }
   },
-  "lastUpdatedAt": "2026-11-04T04:06:25.206Z"
+  "lastUpdatedAt": "2026-11-04T08:11:23.922Z"
 }

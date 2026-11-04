@@ -1,0 +1,6 @@
+file '/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/subclip_01_beat1_v6_winged_dragon_intact_torii_direct_fireball.mp4'
+file '/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/subclip_02_beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves.mp4'
+file '/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/subclip_03_beat4_v2_charge_directly_at_dragon.mp4'
+file '/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/subclip_04_beat4_v6_winged_dragon_3d_cracked_core_overload.mp4'
+file '/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/subclip_05_beat5_v6_winged_dragon_2m_claw_clash_courtyard.mp4'
+file '/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/subclip_06_beat6_v6_winged_dragon_defeat_kneel_courtyard_finale.mp4'

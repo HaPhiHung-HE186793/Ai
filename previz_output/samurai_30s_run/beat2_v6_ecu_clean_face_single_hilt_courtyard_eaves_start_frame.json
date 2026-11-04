@@ -1,0 +1,21 @@
+{
+  "mediaId": "9e818a6c-346a-4f42-a07c-738531fdf682",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves_start_frame.png",
+  "refIdsUsed": [
+    "46351645-0b10-4c90-8aee-9aefa18add2a"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 98,
+      "helmetDetected": false,
+      "missingDragonWingsDetected": false,
+      "fakeSlashLineDetected": false,
+      "setMismatchDetected": false,
+      "backTurnedToEnemyDetected": false,
+      "splitGridDetected": false,
+      "reason": "The candidate keyframe successfully meets all pre-flight continuity requirements. Samurai Kenji is correctly portrayed bareheaded with tied-back dark hair and a clean, uninjured face without a bleeding slash wound. The production design correctly features the enclosed Kyoto courtyard with dark-wood shrine eaves and a stone lantern under rainfall. It is a single widescreen frame with no grid splits or structural errors."
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "mediaId": "17dee56c-80f3-464a-8a72-90b7a40561be",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat1_v5_in_front_of_intact_torii_direct_fireball_start_frame.png",
+  "refIdsUsed": [
+    "46351645-0b10-4c90-8aee-9aefa18add2a",
+    "26fb13b5-691b-4422-9455-842869f799f9",
+    "a0c4766f-7c90-4408-bee1-fc945d93cfa5"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 78,
+      "helmetDetected": false,
+      "backTurnedToEnemyDetected": false,
+      "splitGridDetected": false,
+      "reason": "The keyframe satisfies all continuity and spatial blocking rules. Kenji is bareheaded, facing the dragon directly, and depicted in a single widescreen shot matching the reference assets."
+    }
+  }
+}

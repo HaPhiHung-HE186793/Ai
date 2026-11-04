@@ -1,0 +1,20 @@
+{
+  "mediaId": "43dff62a-907b-4044-b507-83e7984b5dd2",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat2_v3_ecu_rigid_45deg_katana_end_frame.png",
+  "refIdsUsed": [
+    "e486cfc9-8c47-49fc-a123-2c1184133705",
+    "46351645-0b10-4c90-8aee-9aefa18add2a",
+    "a0c4766f-7c90-4408-bee1-fc945d93cfa5"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 78,
+      "helmetDetected": false,
+      "backTurnedToEnemyDetected": false,
+      "splitGridDetected": false,
+      "reason": "The keyframe matches the character reference. Kenji is bareheaded with correct hair, facial scar, and armor detailing in a single widescreen frame."
+    }
+  }
+}

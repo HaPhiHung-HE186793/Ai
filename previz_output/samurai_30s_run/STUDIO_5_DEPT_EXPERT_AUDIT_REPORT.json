@@ -1,6 +1,6 @@
 {
   "studioVersion": "3.0.0-INTERNATIONAL-5-DEPT-PIPELINE",
-  "updatedAt": "2026-11-04T07:11:38.334Z",
+  "updatedAt": "2026-11-04T08:11:54.036Z",
   "departments": {
     "DEPT_01_SHOWRUNNER_DIRECTOR": {
       "name": "Phòng Đạo Diễn & Biên Kịch Phân Cảnh (Showrunner & Action Director Dept)",
@@ -15,7 +15,8 @@
         "RULE_DGA_02: Cấm tuyệt đối hội chứng Cool Poster Syndrome (nhân vật quay lưng vào kẻ địch và chạy về phía ống kính máy quay).",
         "RULE_DGA_03: Mạch Nhân-Quả bắt buộc: Mỗi Beat phải là hệ quả vật lý trực tiếp của Beat liền trước (VD: Beat 3 Rồng vồ sang Trái -> Beat 4 Kenji nhảy sang Phải chém trúng lõi ngực -> Beat 5 Lõi ngực Rồng mang vết chém phát nổ điện từ -> Beat 6 Giao kiếm quyết định).",
         "RULE_DGA_V3_LOCK: Beat 3 phải đặt Rồng ở bên Phải (Screen-Right) lao sang Trái về phía vai Kenji (OTS Screen-Left). Beat 5 phải đặc tả vết chém chéo rực lửa trên lõi ngực Rồng (hệ quả trực tiếp từ nhát chém của Kenji ở giây 0:18-0:19).",
-        "RULE_DGA_PROJECTILE_05: Cuối Beat 1 (0:04-0:05), Rồng bắt buộc phải bắn một luồng cầu lửa plasma bay thẳng trực diện vào vị trí của @KENJI, nối khớp hoàn hảo với cảnh @KENJI giơ kiếm nghiêng 45 độ đỡ cầu lửa ở đầu Beat 2 (0:06)."
+        "RULE_DGA_PROJECTILE_05: Cuối Beat 1 (0:04-0:05), Rồng bắt buộc phải bắn một luồng cầu lửa plasma bay thẳng trực diện vào vị trí của @KENJI, nối khớp hoàn hảo với cảnh @KENJI giơ kiếm nghiêng 45 độ đỡ cầu lửa ở đầu Beat 2 (0:06).",
+        "RULE_DGA_PROJECTILE_05: Nếu Shot N+1 là cảnh Đỡ đòn (Deflect), thì cuối Shot N kẻ địch bắt buộc phải bắn luồng cầu lửa/tia plasma bay thẳng trực diện vào vị trí của nhân vật chính (blasting a focused torrent of golden plasma fire straight at @KENJI)."
       ],
       "learnedRulesHistory": [
         {
@@ -38,6 +39,13 @@
           "defectType": "UNMOTIVATED_DEFENSE_BROKEN_PROJECTILE_HANDOFF_00_05_TO_00_06",
           "defectDetail": "Ở bản V3 giây 0:05, Rồng phóng tia lửa xuống đất ở 2 bên cột cổng (không bắn vào Samurai), làm cảnh Samurai giơ kiếm đỡ lửa ở giây 0:06 bị vô lý.",
           "correctiveRuleAdded": "RULE_DGA_PROJECTILE_05: Cuối Beat 1 (0:04-0:05), Rồng bắt buộc phải bắn một luồng cầu lửa plasma bay thẳng trực diện vào vị trí của @KENJI, nối khớp hoàn hảo với cảnh @KENJI giơ kiếm nghiêng 45 độ đỡ cầu lửa ở đầu Beat 2 (0:06)."
+        },
+        {
+          "timestamp": "2026-11-04T07:46:35.319Z",
+          "beatId": "beat1_v6_winged_dragon_intact_torii_direct_fireball",
+          "defectType": "BROKEN_INTER_SHOT_PROJECTILE_TRAJECTORY",
+          "defectDetail": "Beat kế tiếp (beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves) là cảnh Samurai giơ kiếm đỡ đòn, nhưng cuối beat1_v6_winged_dragon_intact_torii_direct_fireball Rồng lại bắn lửa lệch sang 2 bên thay vì bắn thẳng vào Samurai (lỗi đứt gãy nhân-quả 0:05 -> 0:06).",
+          "correctiveRuleAdded": "RULE_DGA_PROJECTILE_05: Nếu Shot N+1 là cảnh Đỡ đòn (Deflect), thì cuối Shot N kẻ địch bắt buộc phải bắn luồng cầu lửa/tia plasma bay thẳng trực diện vào vị trí của nhân vật chính (blasting a focused torrent of golden plasma fire straight at @KENJI)."
         }
       ],
       "signOffHistory": [
@@ -310,6 +318,60 @@
           "status": "APPROVED_BY_DGA_DIRECTOR_V4",
           "expertComment": "Khoảng cách Proxemics: [2m -> 2m] | Trục 180 độ: 180-DEGREE LOCK: @KENJI on Screen-Left clashes with and parries @KURORYU on Screen-Right at 2m range | Mạch nhân quả: [Continuing directly from the 2m close-quarters explosion at the end of Beat 5 (0:23.5)] => [Kenji parries the Dragon backward in a massive shockwave of white steam and holds his victorious low-ready katana stance].",
           "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T07:46:35.319Z",
+          "beatId": "beat1_v6_winged_dragon_intact_torii_direct_fireball",
+          "expert": "Hollywood DGA Senior Action Director & Showrunner Inspector",
+          "score": 100,
+          "status": "APPROVED_BY_DGA_DIRECTOR_V4",
+          "expertComment": "Khoảng cách Proxemics: [15m -> 15m] | Trục 180 độ: 180-DEGREE LOCK: @KENJI Screen-Left Foreground (facing Right) <-> WINGED @KURORYU at 15m standing IN FRONT OF the intact red Torii Gate (facing Left) | Mạch nhân quả: [Colossal WINGED Mecha-Dragon (with two massive bat-like dragon wings spread wide) stands in the courtyard IN FRONT OF the intact red Torii gate, 15m from Kenji] => [The winged Dragon stomps the wet flagstones and blasts a focused stream of golden plasma fire straight at Kenji while the Torii gate behind it remains intact, forcing Kenji to block the fireball in Beat 2].",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T07:51:33.543Z",
+          "beatId": "beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves",
+          "expert": "Hollywood DGA Senior Action Director & Showrunner Inspector",
+          "score": 100,
+          "status": "APPROVED_BY_DGA_DIRECTOR_V4",
+          "expertComment": "Khoảng cách Proxemics: [15m -> 15m] | Trục 180 độ: 180-DEGREE EYELINE LOCK: @KENJI on Screen-Left looking strictly Right with CLEAN UNINJURED FACE, holding rigid 45-degree katana deflecting incoming dragon fireball | Mạch nhân quả: [Incoming golden plasma fireball blasted directly at Kenji at the end of Beat 1 (0:05)] => [Kenji with a completely clean uninjured face blocks and slices the incoming fireball with his rigid 45-degree katana into sparks against the dark wooden shrine porch background, then sprints forward in Beat 3].",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T07:56:32.701Z",
+          "beatId": "beat4_v2_charge_directly_at_dragon",
+          "expert": "Hollywood DGA Senior Action Director & Showrunner Inspector",
+          "score": 100,
+          "status": "APPROVED_BY_DGA_DIRECTOR_V4",
+          "expertComment": "Khoảng cách Proxemics: [15m -> 2m] | Trục 180 độ: 180-DEGREE LOCK: @KENJI sprints from Screen-Left (15m) to Screen-Right (2m), leaps and slashes WINGED @KURORYU chest core | Mạch nhân quả: [Having deflected the ranged fireball at 15m in Beat 2, Kenji charges across the courtyard to close the 15m distance] => [Kenji closes the gap from 15m to 2m, leaps mid-air to slash the winged Dragon circular chest reactor core, and lands 2m in front of the wounded Dragon].",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T07:56:43.471Z",
+          "beatId": "beat4_v6_winged_dragon_3d_cracked_core_overload",
+          "expert": "Hollywood DGA Senior Action Director & Showrunner Inspector",
+          "score": 100,
+          "status": "APPROVED_BY_DGA_DIRECTOR_V4",
+          "expertComment": "Khoảng cách Proxemics: [2m -> 2m] | Trục 180 độ: 180-DEGREE LOCK: Bareheaded @KENJI in lower-left foreground at 2m; WINGED @KURORYU on Screen-Right in front of the intact red Torii gate recoiling with cracked circular chest reactor core | Mạch nhân quả: [Direct physical impact from Kenji slashing the winged Dragon circular chest reactor core at the end of Beat 3 (0:14)] => [The circular chest reactor core in the center of the winged Dragon sternum cracks open in 3D, spewing thick black smoke, molten sparks, and erratic golden lightning arcs across its chest plates at 2m range].",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T08:01:34.567Z",
+          "beatId": "beat5_v6_winged_dragon_2m_claw_clash_courtyard",
+          "expert": "Hollywood DGA Senior Action Director & Showrunner Inspector",
+          "score": 100,
+          "status": "APPROVED_BY_DGA_DIRECTOR_V4",
+          "expertComment": "Khoảng cách Proxemics: [2m -> 2m] | Trục 180 độ: 180-DEGREE LOCK: Bareheaded @KENJI on Screen-Left and WINGED @KURORYU on Screen-Right engaged at 2-meter close-quarters range in front of the intact red Torii gate | Mạch nhân quả: [Enraged by its smoking cracked chest reactor in Beat 4, the winged Dragon standing 2m in front of Kenji lashes out with a desperate close-range claw smash] => [The winged Dragon slams its mechanical claw down at Kenji at 2m range in a blinding explosion of sparks, leading directly into Kenji parrying and knocking the winged Dragon to its knees in Beat 6].",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T08:05:35.402Z",
+          "beatId": "beat6_v6_winged_dragon_defeat_kneel_courtyard_finale",
+          "expert": "Hollywood DGA Senior Action Director & Showrunner Inspector",
+          "score": 100,
+          "status": "APPROVED_BY_DGA_DIRECTOR_V4",
+          "expertComment": "Khoảng cách Proxemics: [2m -> 2m] | Trục 180 độ: 180-DEGREE LOCK: Bareheaded @KENJI stands victorious on Screen-Left at 2m range as WINGED @KURORYU collapses onto its knees in defeat on Screen-Right in front of the single intact red Torii gate | Mạch nhân quả: [Continuing directly from the 2m close-quarters claw parry explosion at the end of Beat 5 (0:23.8)] => [Kenji forces the wounded winged Dragon backward onto its knees in a billow of white steam as its cracked chest reactor powers down, holding his victorious low-ready katana stance].",
+          "metrics": {}
         }
       ]
     },
@@ -329,7 +391,10 @@
         "RULE_PROP_V3_LOCK: Trong cảnh ECU vũ khí (Beat 2), cả Start Frame và End Frame bắt buộc giữ thanh Katana ở CÙNG MỘT GÓC NGHIÊNG 45 ĐỘ (Fixed 45-degree diagonal guard) với 1 chuôi kiếm thẳng liền mạch (Single Unbroken Tsuka Hilt).",
         "RULE_PROP_LEARNED_01: Mọi cú máy có Katana bắt buộc nhúng điều khoản vật lý: \"100% RIGID STRAIGHT STEEL KATANA BLADE (no drooping tip), SINGLE UNBROKEN STRAIGHT TSUKA HILT (no split pommel)\".",
         "RULE_PROP_LEARNED_05: Khi mô tả vết thương trên cơ thể quái vật (@KURORYU), CẤM dùng danh từ vũ khí (\"katana\", \"sword\"); bắt buộc dùng \"MOLTEN DIAGONAL ARMOR FRACTURE AND CRACKED CHEST REACTOR (NO SWORD OR HILT STUCK IN CHEST)\".",
-        "RULE_ART_WORLD_STATE_07: Mọi trạng thái kiến trúc bối cảnh (như cổng Torii) phải đồng nhất từ Cảnh 1 đến Cảnh 6. Đặt @KURORYU đứng ở sân đền PHÍA TRƯỚC cổng Torii (standing IN FRONT OF the intact Torii gate, clear in Z-depth) để khi Rồng vươn đầu phun lửa vào Samurai thì không chạm/xuyên qua xà ngang cổng, đồng thời giữ cổng Torii nguyên vẹn 100% khớp với toàn bộ các cảnh sau!"
+        "RULE_ART_WORLD_STATE_07: Mọi trạng thái kiến trúc bối cảnh (như cổng Torii) phải đồng nhất từ Cảnh 1 đến Cảnh 6. Đặt @KURORYU đứng ở sân đền PHÍA TRƯỚC cổng Torii (standing IN FRONT OF the intact Torii gate, clear in Z-depth) để khi Rồng vươn đầu phun lửa vào Samurai thì không chạm/xuyên qua xà ngang cổng, đồng thời giữ cổng Torii nguyên vẹn 100% khớp với toàn bộ các cảnh sau!",
+        "RULE_SET_ARCHITECTURE_11: Mọi cú máy phải khóa kiến trúc sân đền: \"enclosed wet slate courtyard flanked on left and right by single-story dark-wood shrine buildings over mossy stone walls and square stone lanterns (NO forest trees, NO orange fences, NO multiple Torii gates)\".",
+        "RULE_MAKEUP_CLEAN_FACE_09: Cấm dùng từ \"scar/scarred cheek\" trong cận cảnh; khóa khuôn mặt @KENJI là \"CLEAN UNINJURED SHARP MASCULINE FACE WET WITH RAIN (NO FACIAL WOUNDS, NO BLEEDING CUTS)\".",
+        "RULE_VFX_CORE_DAMAGE_10: Cấm dùng \"diagonal slash scar/gash\" trên thân Rồng; tổn thất phải là \"SHATTERED CIRCULAR CHEST REACTOR CORE CAVITY SPEWING THICK BLACK SMOKE AND GOLDEN LIGHTNING ARCS ALONG ARMOR SEAMS (NO FLOATING 2D DIAGONAL LINE)\"."
       ],
       "learnedRulesHistory": [
         {
@@ -387,6 +452,55 @@
           "defectType": "SET_DRESSING_TORII_DESTRUCTION_CONTINUITY_MISMATCH",
           "defectDetail": "Ở bản V4, Cảnh 1 phá gãy cổng Torii nhưng sang các Cảnh 2, 3, 4, 5, 6 cổng Torii ở hậu cảnh lại còn nguyên vẹn (vi phạm tính liên tục của hiện trường bối cảnh - Persistent World State).",
           "correctiveRuleAdded": "RULE_ART_WORLD_STATE_07: Mọi trạng thái kiến trúc bối cảnh (như cổng Torii) phải đồng nhất từ Cảnh 1 đến Cảnh 6. Đặt @KURORYU đứng ở sân đền PHÍA TRƯỚC cổng Torii (standing IN FRONT OF the intact Torii gate, clear in Z-depth) để khi Rồng vươn đầu phun lửa vào Samurai thì không chạm/xuyên qua xà ngang cổng, đồng thời giữ cổng Torii nguyên vẹn 100% khớp với toàn bộ các cảnh sau!"
+        },
+        {
+          "timestamp": "2026-11-04T07:46:35.320Z",
+          "beatId": "beat1_v6_winged_dragon_intact_torii_direct_fireball",
+          "defectType": "PRODUCTION_DESIGN_SET_BACKGROUND_DRIFT",
+          "defectDetail": "beat1_v6_winged_dragon_intact_torii_direct_fireball chưa khóa cứng kiến trúc sân đền 2 mái nhà gỗ 1 tầng + bờ tường đá + đèn đá vuông (dễ làm AI vẽ rừng cây, hàng rào cam hoặc nhiều cổng Torii!).",
+          "correctiveRuleAdded": "RULE_SET_ARCHITECTURE_11: Mọi cú máy phải khóa kiến trúc sân đền: \"enclosed wet slate courtyard flanked on left and right by single-story dark-wood shrine buildings over mossy stone walls and square stone lanterns (NO forest trees, NO orange fences, NO multiple Torii gates)\"."
+        },
+        {
+          "timestamp": "2026-11-04T07:51:33.543Z",
+          "beatId": "beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves",
+          "defectType": "MAKEUP_UNMOTIVATED_FACIAL_SLASH_WOUND",
+          "defectDetail": "beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves dùng từ \"scar/scarred\" trên mặt @KENJI làm AI vẽ thành vết kiếm chém rỉ máu dọc mặt trong khi Samurai đang đỡ đòn thành công!",
+          "correctiveRuleAdded": "RULE_MAKEUP_CLEAN_FACE_09: Cấm dùng từ \"scar/scarred cheek\" trong cận cảnh; khóa khuôn mặt @KENJI là \"CLEAN UNINJURED SHARP MASCULINE FACE WET WITH RAIN (NO FACIAL WOUNDS, NO BLEEDING CUTS)\"."
+        },
+        {
+          "timestamp": "2026-11-04T07:51:33.544Z",
+          "beatId": "beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves",
+          "defectType": "PRODUCTION_DESIGN_SET_BACKGROUND_DRIFT",
+          "defectDetail": "beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves chưa khóa cứng kiến trúc sân đền 2 mái nhà gỗ 1 tầng + bờ tường đá + đèn đá vuông (dễ làm AI vẽ rừng cây, hàng rào cam hoặc nhiều cổng Torii!).",
+          "correctiveRuleAdded": "RULE_SET_ARCHITECTURE_11: Mọi cú máy phải khóa kiến trúc sân đền: \"enclosed wet slate courtyard flanked on left and right by single-story dark-wood shrine buildings over mossy stone walls and square stone lanterns (NO forest trees, NO orange fences, NO multiple Torii gates)\"."
+        },
+        {
+          "timestamp": "2026-11-04T07:56:43.474Z",
+          "beatId": "beat4_v6_winged_dragon_3d_cracked_core_overload",
+          "defectType": "VFX_FAKE_2D_FLOATING_SLASH_LINE_ON_DRAGON",
+          "defectDetail": "beat4_v6_winged_dragon_3d_cracked_core_overload mô tả \"diagonal slash/gash\" làm AI vẽ một thanh laser cam 2D thẳng đuột dán đè lên trước thân Rồng và đi theo Rồng rất giả tạo!",
+          "correctiveRuleAdded": "RULE_VFX_CORE_DAMAGE_10: Cấm dùng \"diagonal slash scar/gash\" trên thân Rồng; tổn thất phải là \"SHATTERED CIRCULAR CHEST REACTOR CORE CAVITY SPEWING THICK BLACK SMOKE AND GOLDEN LIGHTNING ARCS ALONG ARMOR SEAMS (NO FLOATING 2D DIAGONAL LINE)\"."
+        },
+        {
+          "timestamp": "2026-11-04T07:56:43.476Z",
+          "beatId": "beat4_v6_winged_dragon_3d_cracked_core_overload",
+          "defectType": "PRODUCTION_DESIGN_SET_BACKGROUND_DRIFT",
+          "defectDetail": "beat4_v6_winged_dragon_3d_cracked_core_overload chưa khóa cứng kiến trúc sân đền 2 mái nhà gỗ 1 tầng + bờ tường đá + đèn đá vuông (dễ làm AI vẽ rừng cây, hàng rào cam hoặc nhiều cổng Torii!).",
+          "correctiveRuleAdded": "RULE_SET_ARCHITECTURE_11: Mọi cú máy phải khóa kiến trúc sân đền: \"enclosed wet slate courtyard flanked on left and right by single-story dark-wood shrine buildings over mossy stone walls and square stone lanterns (NO forest trees, NO orange fences, NO multiple Torii gates)\"."
+        },
+        {
+          "timestamp": "2026-11-04T08:01:34.568Z",
+          "beatId": "beat5_v6_winged_dragon_2m_claw_clash_courtyard",
+          "defectType": "PRODUCTION_DESIGN_SET_BACKGROUND_DRIFT",
+          "defectDetail": "beat5_v6_winged_dragon_2m_claw_clash_courtyard chưa khóa cứng kiến trúc sân đền 2 mái nhà gỗ 1 tầng + bờ tường đá + đèn đá vuông (dễ làm AI vẽ rừng cây, hàng rào cam hoặc nhiều cổng Torii!).",
+          "correctiveRuleAdded": "RULE_SET_ARCHITECTURE_11: Mọi cú máy phải khóa kiến trúc sân đền: \"enclosed wet slate courtyard flanked on left and right by single-story dark-wood shrine buildings over mossy stone walls and square stone lanterns (NO forest trees, NO orange fences, NO multiple Torii gates)\"."
+        },
+        {
+          "timestamp": "2026-11-04T08:05:35.406Z",
+          "beatId": "beat6_v6_winged_dragon_defeat_kneel_courtyard_finale",
+          "defectType": "PRODUCTION_DESIGN_SET_BACKGROUND_DRIFT",
+          "defectDetail": "beat6_v6_winged_dragon_defeat_kneel_courtyard_finale chưa khóa cứng kiến trúc sân đền 2 mái nhà gỗ 1 tầng + bờ tường đá + đèn đá vuông (dễ làm AI vẽ rừng cây, hàng rào cam hoặc nhiều cổng Torii!).",
+          "correctiveRuleAdded": "RULE_SET_ARCHITECTURE_11: Mọi cú máy phải khóa kiến trúc sân đền: \"enclosed wet slate courtyard flanked on left and right by single-story dark-wood shrine buildings over mossy stone walls and square stone lanterns (NO forest trees, NO orange fences, NO multiple Torii gates)\"."
         }
       ],
       "signOffHistory": [
@@ -659,6 +773,60 @@
           "status": "LOCKED_NODE_VERIFIED_BY_WETA_PROP_MASTER",
           "expertComment": "Node beat6_v2_bareheaded_apex_clash_victory đã khóa bất biến SHA-256 và đạt chuẩn 3-Anchor DNA.",
           "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T07:46:35.321Z",
+          "beatId": "beat1_v6_winged_dragon_intact_torii_direct_fireball",
+          "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
+          "score": 100,
+          "status": "APPROVED_BY_WETA_AND_PRODUCTION_DESIGNER_V6",
+          "expertComment": "Đã khóa: (1) Rồng có đủ 2 cánh lớn, (2) Mặt Samurai lành lặn + 1 chuôi kiếm thẳng, (3) Tổn thất lõi ngực vật lý (không vạch laser 2D), (4) Đồng bộ kiến trúc 1 sân đền duy nhất.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T07:51:33.545Z",
+          "beatId": "beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves",
+          "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
+          "score": 100,
+          "status": "APPROVED_BY_WETA_AND_PRODUCTION_DESIGNER_V6",
+          "expertComment": "Đã khóa: (1) Rồng có đủ 2 cánh lớn, (2) Mặt Samurai lành lặn + 1 chuôi kiếm thẳng, (3) Tổn thất lõi ngực vật lý (không vạch laser 2D), (4) Đồng bộ kiến trúc 1 sân đền duy nhất.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T07:56:32.704Z",
+          "beatId": "beat4_v2_charge_directly_at_dragon",
+          "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
+          "score": 100,
+          "status": "LOCKED_NODE_VERIFIED_BY_WETA_AND_PRODUCTION_DESIGNER",
+          "expertComment": "Node beat4_v2_charge_directly_at_dragon đã khóa bất biến SHA-256 và đạt chuẩn Giải phẫu Rồng 2 cánh + Bối cảnh sân đền.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T07:56:43.479Z",
+          "beatId": "beat4_v6_winged_dragon_3d_cracked_core_overload",
+          "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
+          "score": 100,
+          "status": "APPROVED_BY_WETA_AND_PRODUCTION_DESIGNER_V6",
+          "expertComment": "Đã khóa: (1) Rồng có đủ 2 cánh lớn, (2) Mặt Samurai lành lặn + 1 chuôi kiếm thẳng, (3) Tổn thất lõi ngực vật lý (không vạch laser 2D), (4) Đồng bộ kiến trúc 1 sân đền duy nhất.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T08:01:34.568Z",
+          "beatId": "beat5_v6_winged_dragon_2m_claw_clash_courtyard",
+          "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
+          "score": 100,
+          "status": "APPROVED_BY_WETA_AND_PRODUCTION_DESIGNER_V6",
+          "expertComment": "Đã khóa: (1) Rồng có đủ 2 cánh lớn, (2) Mặt Samurai lành lặn + 1 chuôi kiếm thẳng, (3) Tổn thất lõi ngực vật lý (không vạch laser 2D), (4) Đồng bộ kiến trúc 1 sân đền duy nhất.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T08:05:35.410Z",
+          "beatId": "beat6_v6_winged_dragon_defeat_kneel_courtyard_finale",
+          "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
+          "score": 100,
+          "status": "APPROVED_BY_WETA_AND_PRODUCTION_DESIGNER_V6",
+          "expertComment": "Đã khóa: (1) Rồng có đủ 2 cánh lớn, (2) Mặt Samurai lành lặn + 1 chuôi kiếm thẳng, (3) Tổn thất lõi ngực vật lý (không vạch laser 2D), (4) Đồng bộ kiến trúc 1 sân đền duy nhất.",
+          "metrics": {}
         }
       ]
     },
@@ -674,7 +842,9 @@
         "RULE_ASC_01: Soi kiểm định 100% ảnh First Keyframe & Last Keyframe bằng Gemini Vision trước khi cho phép render video (tiết kiệm 100% Credit nếu phát hiện lỗi).",
         "RULE_ASC_02: Kiểm tra khớp góc nghiêng vũ khí giữa First Frame và Last Frame (ngăn chặn lỗi lưỡi kiếm biến dạng dẻo như cao su ở giây 0:06-0:07).",
         "RULE_ASC_03: Kiểm tra hướng mắt (Eyeline Match) và vị trí Trái/Phải đúng Trục 180 độ trên từng tấm ảnh Keyframe.",
-        "RULE_ASC_LEARNED_BEAT1_V5_IN_FRONT_OF_INTACT_TORII_DIRECT_FIREBALL: Khắc phục lỗi \"180-degree axis violation detected: Kenji is positioned in the Screen-Right foreground facing Left, whereas the required spatial axis lock specifies Kenji on Screen-Left Foreground facing Right towards Kuroryu.\" ngay từ Start Frame."
+        "RULE_ASC_LEARNED_BEAT1_V5_IN_FRONT_OF_INTACT_TORII_DIRECT_FIREBALL: Khắc phục lỗi \"180-degree axis violation detected: Kenji is positioned in the Screen-Right foreground facing Left, whereas the required spatial axis lock specifies Kenji on Screen-Left Foreground facing Right towards Kuroryu.\" ngay từ Start Frame.",
+        "RULE_ASC_LEARNED_BEAT1_V6_WINGED_DRAGON_INTACT_TORII_DIRECT_FIREBALL_END: Khắc phục lỗi \"Set continuity violation detected: Multiple red Torii gates are present in the background (a second smaller Torii gate is visible nested behind the primary main Torii gate), violating Rule 6's mandate for a single intact red Torii gate.\" ngay từ End Frame.",
+        "RULE_ASC_LEARNED_BEAT2_V6_ECU_CLEAN_FACE_SINGLE_HILT_COURTYARD_EAVES_END: Khắc phục lỗi \"Spatial axis violation: Kenji is positioned on Screen-Right facing Left towards the flame blast, violating the strict requirement of Kenji being on Screen-Left looking strictly Right.\" ngay từ End Frame."
       ],
       "learnedRulesHistory": [
         {
@@ -683,6 +853,20 @@
           "defectType": "ASC_KEYFRAME_AUDIT_FAILED",
           "defectDetail": "180-degree axis violation detected: Kenji is positioned in the Screen-Right foreground facing Left, whereas the required spatial axis lock specifies Kenji on Screen-Left Foreground facing Right towards Kuroryu.",
           "correctiveRuleAdded": "RULE_ASC_LEARNED_BEAT1_V5_IN_FRONT_OF_INTACT_TORII_DIRECT_FIREBALL: Khắc phục lỗi \"180-degree axis violation detected: Kenji is positioned in the Screen-Right foreground facing Left, whereas the required spatial axis lock specifies Kenji on Screen-Left Foreground facing Right towards Kuroryu.\" ngay từ Start Frame."
+        },
+        {
+          "timestamp": "2026-11-04T07:48:15.518Z",
+          "beatId": "beat1_v6_winged_dragon_intact_torii_direct_fireball_end_frame",
+          "defectType": "ASC_KEYFRAME_V6_AUDIT_FAILED",
+          "defectDetail": "Set continuity violation detected: Multiple red Torii gates are present in the background (a second smaller Torii gate is visible nested behind the primary main Torii gate), violating Rule 6's mandate for a single intact red Torii gate.",
+          "correctiveRuleAdded": "RULE_ASC_LEARNED_BEAT1_V6_WINGED_DRAGON_INTACT_TORII_DIRECT_FIREBALL_END: Khắc phục lỗi \"Set continuity violation detected: Multiple red Torii gates are present in the background (a second smaller Torii gate is visible nested behind the primary main Torii gate), violating Rule 6's mandate for a single intact red Torii gate.\" ngay từ End Frame."
+        },
+        {
+          "timestamp": "2026-11-04T07:53:05.182Z",
+          "beatId": "beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves_end_frame",
+          "defectType": "ASC_KEYFRAME_V6_AUDIT_FAILED",
+          "defectDetail": "Spatial axis violation: Kenji is positioned on Screen-Right facing Left towards the flame blast, violating the strict requirement of Kenji being on Screen-Left looking strictly Right.",
+          "correctiveRuleAdded": "RULE_ASC_LEARNED_BEAT2_V6_ECU_CLEAN_FACE_SINGLE_HILT_COURTYARD_EAVES_END: Khắc phục lỗi \"Spatial axis violation: Kenji is positioned on Screen-Right facing Left towards the flame blast, violating the strict requirement of Kenji being on Screen-Left looking strictly Right.\" ngay từ End Frame."
         }
       ],
       "signOffHistory": [
@@ -954,6 +1138,60 @@
           "score": 100,
           "status": "LOCKED_NODE_VERIFIED_BY_ASC_DP",
           "expertComment": "Node beat6_v2_bareheaded_apex_clash_victory đã khóa bất biến và được nghiệm thu bố cục CinemaScope.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T07:49:02.118Z",
+          "beatId": "beat1_v6_winged_dragon_intact_torii_direct_fireball",
+          "expert": "ASC Director of Photography (DP) & Hollywood Script/Continuity Supervisor",
+          "score": 100,
+          "status": "APPROVED_BY_ASC_DP_AND_SCRIPT_SUPERVISOR_V6",
+          "expertComment": "Start Frame (beat1_v6_winged_dragon_intact_torii_direct_fireball_start_frame.png) & End Frame (beat1_v6_winged_dragon_intact_torii_direct_fireball_end_frame.png) đạt chuẩn 6-Gate: Trục 180 độ, Rồng có 2 cánh lớn, Mặt Samurai sạch không sẹo máu, Sát thương ngực vật lý 3D, và Đồng nhất 100% Bối cảnh Sân đền.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T07:53:53.473Z",
+          "beatId": "beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves",
+          "expert": "ASC Director of Photography (DP) & Hollywood Script/Continuity Supervisor",
+          "score": 100,
+          "status": "APPROVED_BY_ASC_DP_AND_SCRIPT_SUPERVISOR_V6",
+          "expertComment": "Start Frame (beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves_start_frame.png) & End Frame (beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves_end_frame.png) đạt chuẩn 6-Gate: Trục 180 độ, Rồng có 2 cánh lớn, Mặt Samurai sạch không sẹo máu, Sát thương ngực vật lý 3D, và Đồng nhất 100% Bối cảnh Sân đền.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T07:56:32.706Z",
+          "beatId": "beat4_v2_charge_directly_at_dragon",
+          "expert": "ASC Director of Photography (DP) & Hollywood Script/Continuity Supervisor",
+          "score": 100,
+          "status": "LOCKED_NODE_VERIFIED_BY_ASC_DP_V6",
+          "expertComment": "Node beat4_v2_charge_directly_at_dragon đã khóa bất biến và được nghiệm thu bố cục CinemaScope.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T07:58:17.276Z",
+          "beatId": "beat4_v6_winged_dragon_3d_cracked_core_overload",
+          "expert": "ASC Director of Photography (DP) & Hollywood Script/Continuity Supervisor",
+          "score": 100,
+          "status": "APPROVED_BY_ASC_DP_AND_SCRIPT_SUPERVISOR_V6",
+          "expertComment": "Start Frame (beat4_v6_winged_dragon_3d_cracked_core_overload_start_frame.png) & End Frame (beat4_v6_winged_dragon_3d_cracked_core_overload_end_frame.png) đạt chuẩn 6-Gate: Trục 180 độ, Rồng có 2 cánh lớn, Mặt Samurai sạch không sẹo máu, Sát thương ngực vật lý 3D, và Đồng nhất 100% Bối cảnh Sân đền.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T08:03:14.736Z",
+          "beatId": "beat5_v6_winged_dragon_2m_claw_clash_courtyard",
+          "expert": "ASC Director of Photography (DP) & Hollywood Script/Continuity Supervisor",
+          "score": 100,
+          "status": "APPROVED_BY_ASC_DP_AND_SCRIPT_SUPERVISOR_V6",
+          "expertComment": "Start Frame (beat5_v6_winged_dragon_2m_claw_clash_courtyard_start_frame.png) & End Frame (beat5_v6_winged_dragon_2m_claw_clash_courtyard_end_frame.png) đạt chuẩn 6-Gate: Trục 180 độ, Rồng có 2 cánh lớn, Mặt Samurai sạch không sẹo máu, Sát thương ngực vật lý 3D, và Đồng nhất 100% Bối cảnh Sân đền.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T08:07:16.654Z",
+          "beatId": "beat6_v6_winged_dragon_defeat_kneel_courtyard_finale",
+          "expert": "ASC Director of Photography (DP) & Hollywood Script/Continuity Supervisor",
+          "score": 100,
+          "status": "APPROVED_BY_ASC_DP_AND_SCRIPT_SUPERVISOR_V6",
+          "expertComment": "Start Frame (beat6_v6_winged_dragon_defeat_kneel_courtyard_finale_start_frame.png) & End Frame (beat6_v6_winged_dragon_defeat_kneel_courtyard_finale_end_frame.png) đạt chuẩn 6-Gate: Trục 180 độ, Rồng có 2 cánh lớn, Mặt Samurai sạch không sẹo máu, Sát thương ngực vật lý 3D, và Đồng nhất 100% Bối cảnh Sân đền.",
           "metrics": {}
         }
       ]
@@ -1359,6 +1597,84 @@
             "distanceWindow": "2m -> 2m",
             "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat6_v2_bareheaded_apex_clash_victory_ves_1fps_strip.png"
           }
+        },
+        {
+          "timestamp": "2026-11-04T07:51:33.542Z",
+          "beatId": "beat1_v6_winged_dragon_intact_torii_direct_fireball",
+          "expert": "VES (Visual Effects Society) Senior Animation & Temporal Physics Supervisor",
+          "score": 74,
+          "status": "APPROVED_BY_VES_PHYSICS_SUPERVISOR_V6",
+          "expertComment": "Kiểm định dải 1fps (beat1_v6_winged_dragon_intact_torii_direct_fireball_ves_1fps_strip.png [0s -> 5.5s], Cự ly 15m->15m): The winged mecha-dragon maintains proper dual-wing visual continuity, weapon rigidity, and 3D volumetric fire interaction within a consistent torii gate background.",
+          "metrics": {
+            "trimWindow": "0s -> 5.5s",
+            "distanceWindow": "15m -> 15m",
+            "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat1_v6_winged_dragon_intact_torii_direct_fireball_ves_1fps_strip.png"
+          }
+        },
+        {
+          "timestamp": "2026-11-04T07:56:32.698Z",
+          "beatId": "beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves",
+          "expert": "VES (Visual Effects Society) Senior Animation & Temporal Physics Supervisor",
+          "score": 75,
+          "status": "APPROVED_BY_VES_PHYSICS_SUPERVISOR_V6",
+          "expertComment": "Kiểm định dải 1fps (beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves_ves_1fps_strip.png [0s -> 4.3s], Cự ly 15m->15m): Katana geometry and facial makeup remain intact and rigid. Volumetric fire and environment stay consistent across all four frames.",
+          "metrics": {
+            "trimWindow": "0s -> 4.3s",
+            "distanceWindow": "15m -> 15m",
+            "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves_ves_1fps_strip.png"
+          }
+        },
+        {
+          "timestamp": "2026-11-04T07:56:43.468Z",
+          "beatId": "beat4_v2_charge_directly_at_dragon",
+          "expert": "VES (Visual Effects Society) Senior Animation & Temporal Physics Supervisor",
+          "score": 73,
+          "status": "APPROVED_BY_VES_PHYSICS_SUPERVISOR_V6",
+          "expertComment": "Kiểm định dải 1fps (beat4_v2_charge_directly_at_dragon_ves_1fps_strip.png [0.2s -> 5.4s], Cự ly 15m->2m): The sequence maintains asset continuity, spatial consistency, and weapon rigidity throughout. Impact visuals show proper 3D particle depth rather than 2D overlays.",
+          "metrics": {
+            "trimWindow": "0.2s -> 5.4s",
+            "distanceWindow": "15m -> 2m",
+            "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat4_v2_charge_directly_at_dragon_ves_1fps_strip.png"
+          }
+        },
+        {
+          "timestamp": "2026-11-04T08:01:34.566Z",
+          "beatId": "beat4_v6_winged_dragon_3d_cracked_core_overload",
+          "expert": "VES (Visual Effects Society) Senior Animation & Temporal Physics Supervisor",
+          "score": 72,
+          "status": "APPROVED_BY_VES_PHYSICS_SUPERVISOR_V6",
+          "expertComment": "Kiểm định dải 1fps (beat4_v6_winged_dragon_3d_cracked_core_overload_ves_1fps_strip.png [0s -> 4.2s], Cự ly 2m->2m): The dragon consistently maintains its biomechanical wings and 3D volumetric fire/smoke effects. The katana blade remains rigid, and set architecture remains spatially consistent throughout.",
+          "metrics": {
+            "trimWindow": "0s -> 4.2s",
+            "distanceWindow": "2m -> 2m",
+            "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat4_v6_winged_dragon_3d_cracked_core_overload_ves_1fps_strip.png"
+          }
+        },
+        {
+          "timestamp": "2026-11-04T08:05:35.398Z",
+          "beatId": "beat5_v6_winged_dragon_2m_claw_clash_courtyard",
+          "expert": "VES (Visual Effects Society) Senior Animation & Temporal Physics Supervisor",
+          "score": 72,
+          "status": "APPROVED_BY_VES_PHYSICS_SUPERVISOR_V6",
+          "expertComment": "Kiểm định dải 1fps (beat5_v6_winged_dragon_2m_claw_clash_courtyard_ves_1fps_strip.png [0s -> 4.6s], Cự ly 2m->2m): Mecha-dragon retains wing continuity across all frames. Impact sparks exhibit proper 3D volumetric integration rather than flat 2D overlays. Weapon geometry and background courtyard architecture remain fully consistent.",
+          "metrics": {
+            "trimWindow": "0s -> 4.6s",
+            "distanceWindow": "2m -> 2m",
+            "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat5_v6_winged_dragon_2m_claw_clash_courtyard_ves_1fps_strip.png"
+          }
+        },
+        {
+          "timestamp": "2026-11-04T08:11:36.432Z",
+          "beatId": "beat6_v6_winged_dragon_defeat_kneel_courtyard_finale",
+          "expert": "VES (Visual Effects Society) Senior Animation & Temporal Physics Supervisor",
+          "score": 73,
+          "status": "APPROVED_BY_VES_PHYSICS_SUPERVISOR_V6",
+          "expertComment": "Kiểm định dải 1fps (beat6_v6_winged_dragon_defeat_kneel_courtyard_finale_ves_1fps_strip.png [0s -> 6.6s], Cự ly 2m->2m): Temporal continuity is maintained across all frames. Dragon wings, katana geometry, volumetric reactor smoke, and shrine courtyard architecture remain consistent throughout the sequence.",
+          "metrics": {
+            "trimWindow": "0s -> 6.6s",
+            "distanceWindow": "2m -> 2m",
+            "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat6_v6_winged_dragon_defeat_kneel_courtyard_finale_ves_1fps_strip.png"
+          }
         }
       ]
     },
@@ -1482,6 +1798,29 @@
               "Beat 4 (beat5_v3_ruptured_chest_reactor_no_sword): [2m -> 2m]",
               "Beat 5 (beat3_v3_dragon_lunge_right_to_left): [2m -> 2m]",
               "Beat 6 (beat6_v2_bareheaded_apex_clash_victory): [2m -> 2m]"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-11-04T08:11:54.036Z",
+          "beatId": "FINAL_V4_MASTER_DELIVERABLE",
+          "expert": "ACE Senior Film Editor, CSI Master Colorist & Dolby/EBU R128 Re-Recording Mixer",
+          "score": 100,
+          "status": "APPROVED_FOR_INTERNATIONAL_RELEASE_V4",
+          "expertComment": "Master 60_SAMURAI_V6_UNIFIED_6GATE_MASTER.mp4 đạt chuẩn Vật lý Va chạm, Đạn đạo Liên cảnh & Biểu đồ Khoảng cách Một chiều (Beat 1 (beat1_v6_winged_dragon_intact_torii_direct_fireball): [15m -> 15m] -> Beat 2 (beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves): [15m -> 15m] -> Beat 3 (beat4_v2_charge_directly_at_dragon): [15m -> 2m] -> Beat 4 (beat4_v6_winged_dragon_3d_cracked_core_overload): [2m -> 2m] -> Beat 5 (beat5_v6_winged_dragon_2m_claw_clash_courtyard): [2m -> 2m] -> Beat 6 (beat6_v6_winged_dragon_defeat_kneel_courtyard_finale): [2m -> 2m]). EBU R128 = -17.2 LUFS / -4.1 dBTP.",
+          "metrics": {
+            "standard": "EBU R128 / Netflix Cinema Spec (-16.0 LUFS, <= -1.0 dBTP)",
+            "integratedLoudnessLufs": -17.2,
+            "truePeakDbtp": -4.1,
+            "clippingDetected": false,
+            "status": "PASS_BROADCAST_SPEC",
+            "proxemicsDistanceGraph": [
+              "Beat 1 (beat1_v6_winged_dragon_intact_torii_direct_fireball): [15m -> 15m]",
+              "Beat 2 (beat2_v6_ecu_clean_face_single_hilt_courtyard_eaves): [15m -> 15m]",
+              "Beat 3 (beat4_v2_charge_directly_at_dragon): [15m -> 2m]",
+              "Beat 4 (beat4_v6_winged_dragon_3d_cracked_core_overload): [2m -> 2m]",
+              "Beat 5 (beat5_v6_winged_dragon_2m_claw_clash_courtyard): [2m -> 2m]",
+              "Beat 6 (beat6_v6_winged_dragon_defeat_kneel_courtyard_finale): [2m -> 2m]"
             ]
           }
         }

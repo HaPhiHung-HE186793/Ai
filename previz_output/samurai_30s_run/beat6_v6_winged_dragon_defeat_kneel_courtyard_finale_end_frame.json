@@ -1,0 +1,23 @@
+{
+  "mediaId": "7d50f426-3a47-40e1-b17a-5ab9b7fc20ca",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat6_v6_winged_dragon_defeat_kneel_courtyard_finale_end_frame.png",
+  "refIdsUsed": [
+    "0beb15aa-10fd-4ad9-b33c-d5c3034e0dc5",
+    "26fb13b5-691b-4422-9455-842869f799f9",
+    "e9b05664-d2eb-405d-8c50-1a56cc2b2359"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 98,
+      "helmetDetected": false,
+      "missingDragonWingsDetected": false,
+      "fakeSlashLineDetected": false,
+      "setMismatchDetected": false,
+      "backTurnedToEnemyDetected": false,
+      "splitGridDetected": false,
+      "reason": "The keyframe satisfies all six continuity and production design standards. Samurai Kenji is bareheaded with tied-back hair, uninjured, positioned on screen-left facing right. Mecha-Dragon Kuroryu features two fully fully-rendered biomechanical wings with physical smoke and light emitting directly from its circular chest core. The setting correctly presents the stone courtyard flanked by shrine buildings and lanterns in a single widescreen frame."
+    }
+  }
+}
