@@ -20,6 +20,12 @@
 
 ![Bằng chứng Surgical Fix tại t=00:08, 00:09, 00:10 — Chuôi kiếm liền mạch thẳng tắp 100%](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/24_SURGICAL_FIX_00_09_HILT_VERIFICATION.png)
 
+### 🎯 Bằng Chứng Surgical Blocking Fix tại Giây `00:15 -> 00:19` (`25_SURGICAL_FIX_00_15_TO_19_CHARGE_AT_DRAGON.png`)
+- **Chỉ mở khóa duy nhất Beat 4 (`beat4_v2_charge_directly_at_dragon`)**, giữ nguyên 100% các Beat 1, 2 (chuôi kiếm đã sửa), 3, 5, 6!
+- Khóa chặt **Trục 180 Độ (`Left-to-Right Attack Vector` + `BackTurned: false` trong `PreFlightVisionGate`)**: Samurai ở bên **Trái** lao thẳng về phía **Phải** hướng trực diện vào con Rồng (`t=00:15`), bật nhảy lên không trung (`t=00:17`), và bổ nhát kiếm lửa nổ tung tia lửa điện ngay giữa ngực Rồng (`t=00:19`)!
+
+![Bằng chứng Surgical Blocking Fix tại t=00:15, 00:17, 00:19 — Samurai lao từ Trái sang Phải chém thẳng vào ngực Rồng](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/25_SURGICAL_FIX_00_15_TO_19_CHARGE_AT_DRAGON.png)
+
 ---
 
 ## ⚖️ 2. Video Đặt Cạnh Nhau: Bản Cũ V1 (Trái) vs. Bản Mới V2 Senior Engine (Phải)
