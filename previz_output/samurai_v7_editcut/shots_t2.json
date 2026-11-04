@@ -1,0 +1,144 @@
+[
+ {
+  "id": "S01",
+  "dur": 2.0,
+  "refs": [
+   "kenji",
+   "env"
+  ],
+  "img": "Extreme wide shot from behind: KENJI the samurai stands small in the center of the rain-soaked stone courtyard, back to camera, facing the huge red torii gate far ahead, dark cloak dripping, stone lanterns glowing amber on both sides.",
+  "vid": "Slow steady camera push-in toward the samurai. Heavy rain falls, lanterns flicker. The samurai stands still."
+ },
+ {
+  "id": "S02",
+  "dur": 1.5,
+  "refs": [
+   "kenji"
+  ],
+  "img": "Extreme close-up of KENJI's face, eyes closed, rain running down his face and over the thin vertical scar on his left cheek, wet tied-back hair, warm amber rim light, cold blue fill.",
+  "vid": "He slowly opens his eyes and stares forward. Raindrops run down his face. Static camera."
+ },
+ {
+  "id": "S03",
+  "dur": 1.5,
+  "refs": [
+   "kenji"
+  ],
+  "img": "Extreme close-up insert: a black-armored hand gripping a katana hilt with amber-lit wrapping at the samurai's hip, thumb pressed against the round guard, rain droplets on the black armor.",
+  "vid": "The armored hand slowly tightens its grip around the katana hilt, leather creaking, rain dripping off the black armor. The sword stays in its scabbard. Static camera."
+ },
+ {
+  "id": "S04",
+  "dur": 2.0,
+  "refs": [
+   "env"
+  ],
+  "img": "Ground-level close shot of a rain puddle on dark stone pavement reflecting the red torii gate and glowing stone lanterns at night.",
+  "vid": "The puddle surface trembles with heavy rhythmic impacts, ripple rings spread outward, a stone lantern in the background shakes. Static camera."
+ },
+ {
+  "id": "S05",
+  "dur": 2.5,
+  "refs": [
+   "dragon",
+   "env"
+  ],
+  "img": "Wide low-angle shot: the colossal black biomechanical mecha-dragon KURORYU emerges from thick mist behind the red torii gate, glowing amber chest core and neck vents, wings half folded, heavy rain.",
+  "vid": "The mecha-dragon steps forward out of the mist, raises its head and roars, its chest core flaring brighter. Camera slowly tilts up."
+ },
+ {
+  "id": "S06",
+  "dur": 1.5,
+  "refs": [
+   "kenji"
+  ],
+  "img": "Medium close-up of KENJI standing in the rain holding his katana with both hands in front of his chest, determined expression, amber-lit blade, dark cloak.",
+  "vid": "He raises the katana into a ready stance, rain splashing off the blade. Static camera."
+ },
+ {
+  "id": "S07",
+  "dur": 2.0,
+  "refs": [
+   "dragon"
+  ],
+  "img": "Close-up of the mecha-dragon KURORYU's armored head, metal jaws opening, molten amber fire glowing deep inside its throat, rain hissing into steam on the black armor plates.",
+  "vid": "The jaws open wider and the fire inside the throat grows brighter and brighter, steam rising. Slight camera push-in."
+ },
+ {
+  "id": "S08",
+  "dur": 2.0,
+  "refs": [
+   "env"
+  ],
+  "img": "Wide shot of the empty rain-soaked temple courtyard with stone lanterns, a torrent of orange dragon fire entering from the right edge of the frame.",
+  "vid": "A massive stream of dragon fire sweeps across the courtyard from right to left, rain flashing into steam, a stone lantern knocked over. Static camera."
+ },
+ {
+  "id": "S09",
+  "dur": 1.5,
+  "refs": [
+   "kenji",
+   "env"
+  ],
+  "img": "Medium shot of KENJI sprinting toward the camera through rain and steam in the temple courtyard, katana held low in his right hand, cloak flying, orange fire glow behind him.",
+  "vid": "He runs fast straight toward the camera, splashing water. Camera tracks backward with him."
+ },
+ {
+  "id": "S10",
+  "dur": 1.5,
+  "refs": [
+   "kenji"
+  ],
+  "img": "Low-angle shot of KENJI leaping high into the stormy night sky, dark silhouette against a lightning flash, katana raised overhead with both hands, cloak spread.",
+  "vid": "He rises through the air with the katana raised overhead, rain streaking past, lightning flashes. Slow motion."
+ },
+ {
+  "id": "S11",
+  "dur": 2.0,
+  "refs": [
+   "kenji"
+  ],
+  "img": "Extreme close-up of a glowing amber katana blade mid-swing slicing through falling raindrops against a dark stormy background.",
+  "vid": "The blade sweeps diagonally across the frame in slow motion, leaving a bright amber light trail, raindrops splitting apart."
+ },
+ {
+  "id": "S12",
+  "dur": 1.5,
+  "refs": [
+   "dragon"
+  ],
+  "img": "Close-up of the mecha-dragon KURORYU's glowing amber chest core with a fresh bright diagonal slash wound cut across it, sparks flying, black armor plates.",
+  "vid": "Cracks spread across the glowing core, sparks and molten light burst out, the armor plates buckle. Static camera."
+ },
+ {
+  "id": "S13",
+  "dur": 2.5,
+  "refs": [
+   "dragon",
+   "env"
+  ],
+  "img": "Wide shot of the mecha-dragon KURORYU collapsing onto the wet stone courtyard in front of the red torii gate, chest core sputtering, steam and sparks, rain.",
+  "vid": "The defeated dragon slumps down and lies motionless on the wet stone, a burst of steam and water splash, its glowing chest core slowly fades to dark. It stays down and does not get up. Static camera."
+ },
+ {
+  "id": "S14",
+  "dur": 2.5,
+  "refs": [
+   "kenji",
+   "env"
+  ],
+  "img": "Medium shot of KENJI kneeling on one knee on the wet stone pavement after landing, katana in his right hand, rain pouring, steam drifting behind him.",
+  "vid": "He slowly slides the katana back into the scabbard at his hip and lowers his head. Rain continues. Static camera."
+ },
+ {
+  "id": "S15",
+  "dur": 2.5,
+  "refs": [
+   "kenji",
+   "dragon",
+   "env"
+  ],
+  "img": "Wide shot from behind KENJI standing in the rainy courtyard facing the red torii gate, the dark smoking wreck of the mecha-dragon lying motionless beyond the gate, amber lantern glow.",
+  "vid": "Slow camera pull-back. Rain falls, smoke rises from the wreck, the samurai stands still."
+ }
+]

@@ -1,0 +1,77 @@
+{
+  "anchors": {
+    "kenji": "7125ac23-2d3c-4343-bbf4-ae67676f0b07",
+    "dragon": "b88978ad-c492-4655-a79a-9325b972a877",
+    "env": "128a9c98-e585-4255-a064-94899d93fa42"
+  },
+  "shots": {
+    "S01_t1": {
+      "img": "4d4ebfce-e122-4b5c-81df-c40b4a5ec255",
+      "vid": "ddc30ebb-e864-4296-a2b2-e39d413b7a4a"
+    },
+    "S02_t1": {
+      "img": "0ec11e24-6c60-497c-84e0-83739c9c76d3",
+      "vid": "6514f77a-f103-428d-8dcd-c7382026b5c4"
+    },
+    "S03_t1": {
+      "img": "d7627969-f6f9-48d1-ad03-15c8ea36c2ca",
+      "vid": "0b6a2f50-d15e-47ac-bba4-b4c948fd6ed9"
+    },
+    "S04_t1": {
+      "img": "7f8eefed-1352-48f2-9572-f310bfd53a57",
+      "vid": "cebeeb7b-b69f-47b0-91df-202e503b525f"
+    },
+    "S05_t1": {
+      "img": "428108c8-0fa5-4725-9602-328285e58651",
+      "vid": "370449b9-2928-454e-b4bc-258bbcd08ca8"
+    },
+    "S06_t1": {
+      "img": "ebb8cfc1-0f88-4414-b88d-b57f91ad9e18",
+      "vid": "6edfceac-7bd3-43c6-9a18-04ef54ce69df"
+    },
+    "S07_t1": {
+      "img": "24791ffd-a8ba-49f4-8a95-0383f976b8a0",
+      "vid": "3d55c7f3-c771-4801-b8bf-357cbd09e6e8"
+    },
+    "S08_t1": {
+      "img": "c4906a40-455b-4dfd-aada-a77f2c3eb8f0",
+      "vid": "7f9d6022-6f49-426d-9c55-931959364d80"
+    },
+    "S09_t1": {
+      "img": "6571486c-adac-4d5c-9805-870f8ba350eb",
+      "vid": "a3caef27-1b9d-47fa-ad7f-5ba8b5f2f9b7"
+    },
+    "S10_t1": {
+      "img": "92d633e7-6e4a-4335-bb80-756ebb989347",
+      "vid": "df57697a-a01f-4784-b979-c154e683aada"
+    },
+    "S11_t1": {
+      "img": "4ae638d5-8816-4949-a918-eb1a75ad9dea",
+      "vid": "52639ee2-af6d-40ab-84c5-204aab9191cc"
+    },
+    "S12_t1": {
+      "img": "ea186e02-ac7a-4063-87a6-a9fa47667c7a",
+      "vid": "df782d52-9781-4bc9-aa3d-62e7f02f5e5c"
+    },
+    "S13_t1": {
+      "img": "fdf46d27-6a54-43c1-a389-dc5506779206",
+      "vid": "141f2de2-93d6-49ef-b223-9b722855cd15"
+    },
+    "S14_t1": {
+      "img": "cee2cdb4-971d-4dc5-865f-0bd29a9e9e45",
+      "vid": "93042036-d9cf-464b-b6d1-8e939314f9ac"
+    },
+    "S15_t1": {
+      "img": "9e34bed6-0069-45c6-8f23-d3e9b0c44973",
+      "vid": "143e0e7e-8fba-4a8a-bf22-8a3322bdf8b8"
+    },
+    "S03_t2": {
+      "img": "d7627969-f6f9-48d1-ad03-15c8ea36c2ca",
+      "vid": "cf2e5037-2436-4e89-834d-10a5d8b6ab69"
+    },
+    "S13_t2": {
+      "img": "fdf46d27-6a54-43c1-a389-dc5506779206",
+      "vid": "aa8ae157-8bb6-4a01-adf8-8c7c82c83db8"
+    }
+  }
+}

@@ -1,0 +1,175 @@
+[
+ {
+  "id": "S01",
+  "dur": 2.0,
+  "state": "kiếm trong vỏ · rồng ẩn trong sương · chưa có lửa",
+  "refs": [
+   "master",
+   "env"
+  ],
+  "img": "New camera: same wide side view as reference image 1, but the dragon is completely hidden inside thick fog behind the torii gate so only the torii and the fog are visible on the right. KENJI stands on the left facing right, katana sheathed at his left hip.",
+  "vid": "Slow camera push-in. Heavy rain, the fog behind the torii swirls. The samurai on the left stays still, facing right."
+ },
+ {
+  "id": "S02",
+  "dur": 1.5,
+  "state": "kiếm trong vỏ",
+  "refs": [
+   "master",
+   "kenji"
+  ],
+  "img": "New camera: close-up of KENJI's face in three-quarter profile on the left, he faces screen-right toward the torii, rain running over the thin scar on his left cheek, eyes closed. IMPORTANT: in this shot the dragon is completely hidden; the background on the right shows only the red torii pillars dissolving into thick white fog, no creature visible.",
+  "vid": "He opens his eyes and stares to the right. Raindrops run down his face. Static camera."
+ },
+ {
+  "id": "S03",
+  "dur": 2.0,
+  "state": "rồng ẩn · đất rung",
+  "refs": [
+   "master",
+   "env"
+  ],
+  "img": "New camera: ground-level close shot of a rain puddle on the stone pavement, the red torii gate reflected and visible in the background. IMPORTANT: in this shot the dragon is completely hidden; the area behind the torii is filled with thick fog and no creature is visible anywhere.",
+  "vid": "The puddle trembles with heavy rhythmic impacts coming from the right, ripple rings spread. Static camera."
+ },
+ {
+  "id": "S04",
+  "dur": 2.5,
+  "state": "rồng xuất hiện · cao ~1,3× cổng",
+  "refs": [
+   "master",
+   "dragon"
+  ],
+  "img": "New camera: over-the-shoulder shot from behind KENJI's right shoulder; his dark shoulder and head fill the left foreground, out of focus. In the right background the colossal mecha-dragon KURORYU stands in front of the red torii gate facing left toward him, about 1.3 times the height of the torii, amber chest core glowing, mist around its legs.",
+  "vid": "The dragon lifts its head and lets out a loud roar toward the samurai with its jaws open; its chest core pulses brighter. Its mouth stays empty: no fire, no flames, only steam from the rain. The samurai in the foreground stays still. Static camera."
+ },
+ {
+  "id": "S05",
+  "dur": 1.5,
+  "state": "kiếm trong vỏ → bắt đầu rút",
+  "refs": [
+   "master",
+   "kenji"
+  ],
+  "img": "New camera: close-up insert of KENJI's right hand gripping the katana hilt at his left hip, thumb on the round guard, he faces right, rain on black armor.",
+  "vid": "His thumb pushes the guard forward and his hand tightens on the hilt, ready to draw. Static camera."
+ },
+ {
+  "id": "S06",
+  "dur": 1.5,
+  "state": "kiếm đã rút · phát sáng cam",
+  "refs": [
+   "master",
+   "kenji"
+  ],
+  "img": "New camera: medium shot of KENJI from the side, facing screen-right, the katana already half drawn from the scabbard at his left hip, the blade glowing amber, the foggy courtyard behind him.",
+  "vid": "He finishes drawing the katana in one smooth motion and points the glowing blade to the right toward the enemy. Static camera."
+ },
+ {
+  "id": "S07",
+  "dur": 2.0,
+  "state": "rồng chuẩn bị phun lửa",
+  "refs": [
+   "master",
+   "dragon"
+  ],
+  "img": "New camera: close-up of the mecha-dragon KURORYU's armored head in profile facing screen-left, the red torii pillar behind it on the right, jaws opening with molten amber fire glowing inside its throat, rain hissing into steam.",
+  "vid": "The jaws open wide and the fire inside the throat grows brighter, aimed to the left. Slight push-in."
+ },
+ {
+  "id": "S08",
+  "dur": 2.0,
+  "state": "lửa bay phải → trái",
+  "refs": [
+   "master"
+  ],
+  "img": "New camera: same wide side view as reference image 1, the dragon on the right in front of the torii breathes a huge stream of fire that travels from right to left across the courtyard toward the left side where the samurai stood.",
+  "vid": "The stream of fire travels from right to left and slams into the left side of the courtyard, rain flashing into a wall of steam. Static camera."
+ },
+ {
+  "id": "S09",
+  "dur": 2.0,
+  "state": "Kenji lao trái → phải · kiếm sáng",
+  "refs": [
+   "master",
+   "kenji"
+  ],
+  "img": "New camera: side tracking medium-wide shot, KENJI bursts out of a wall of white steam on the left and sprints to the right toward the dragon, glowing katana held low, cloak flying, the dragon's dark legs and the torii visible at the right edge.",
+  "vid": "He sprints from left to right across the wet stone, splashing water. The camera tracks sideways with him."
+ },
+ {
+  "id": "S10",
+  "dur": 1.5,
+  "state": "Kenji nhảy trái → phải",
+  "refs": [
+   "master",
+   "kenji"
+  ],
+  "img": "New camera: low angle side view, KENJI leaps from the left upward and to the right toward the huge dark bulk of the dragon on the right side of the frame, glowing katana raised over his head, rain streaks, same night courtyard.",
+  "vid": "He flies upward from left to right with the katana raised high, rain streaking past. Slow motion."
+ },
+ {
+  "id": "S11",
+  "dur": 1.5,
+  "state": "liên kết: Kenji trên không, rồng ngẩng lên",
+  "refs": [
+   "master",
+   "dragon"
+  ],
+  "img": "New camera: low angle from behind the dragon's right shoulder; the dragon's armored head and neck fill the right foreground looking up and to the left; in the stormy sky on the left, small in the distance, KENJI descends toward it with the glowing katana raised.",
+  "vid": "The samurai drops down toward the dragon from the upper left; the dragon's head turns up toward him. Slow motion."
+ },
+ {
+  "id": "S12",
+  "dur": 1.5,
+  "state": "chém trái → phải",
+  "refs": [
+   "kenji"
+  ],
+  "img": "Extreme close-up of the glowing amber katana blade mid-swing, moving from left to right through falling raindrops, dark stormy background with amber sparks.",
+  "vid": "The blade sweeps from left to right across the frame in slow motion leaving a bright amber light trail, raindrops splitting."
+ },
+ {
+  "id": "S13",
+  "dur": 1.5,
+  "state": "lõi ngực bị chém",
+  "refs": [
+   "master",
+   "dragon"
+  ],
+  "img": "New camera: close-up of the mecha-dragon's chest, the dragon facing screen-left, its glowing amber chest core with a fresh bright diagonal slash wound, sparks flying, rain.",
+  "vid": "Cracks spread across the glowing core, sparks and molten light burst out, armor plates buckle. Static camera."
+ },
+ {
+  "id": "S14",
+  "dur": 2.5,
+  "state": "rồng gục · Kenji đáp bên trái",
+  "refs": [
+   "master",
+   "dragon"
+  ],
+  "img": "New camera: same wide side view as reference image 1; on the right the colossal dragon begins collapsing forward in front of the torii, chest core sputtering sparks; on the left KENJI crouches low where he landed, katana in hand, facing right.",
+  "vid": "The dragon crashes down heavily onto the stone in front of the torii, a huge burst of water and steam, its glowing vents fade to dark. The samurai stays crouched on the left. Static camera."
+ },
+ {
+  "id": "S15",
+  "dur": 2.0,
+  "state": "tra kiếm vào vỏ · rồng nằm phía sau",
+  "refs": [
+   "master",
+   "kenji"
+  ],
+  "img": "New camera: medium shot of KENJI kneeling on one knee on the left, facing right, glowing katana in his right hand; in the blurred right background the fallen dark dragon lies on the ground in front of the torii with steam rising.",
+  "vid": "He slowly slides the katana back into the scabbard at his left hip and lowers his head. The blade's glow disappears into the scabbard. Static camera."
+ },
+ {
+  "id": "S16",
+  "dur": 2.5,
+  "state": "kết: rồng nằm im trước cổng",
+  "refs": [
+   "master"
+  ],
+  "img": "New camera: same wide side view as reference image 1; KENJI stands on the left facing right, katana sheathed; on the right the colossal dragon lies motionless and dark on the stone in front of the torii, steam rising, rain falling, no fire.",
+  "vid": "Slow camera pull-back. Rain falls, steam rises from the fallen dragon, the samurai stands still."
+ }
+]
