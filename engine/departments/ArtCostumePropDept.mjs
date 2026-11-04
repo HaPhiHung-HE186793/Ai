@@ -31,6 +31,21 @@ export class ArtCostumePropDept {
     const issues = [];
     const combined = `${shotSpec.startFrameActionEn || ''} ${shotSpec.endFrameActionEn || ''}`;
 
+    // Kiểm tra lỗi Rắc-cô Hiện trường (Set Dressing / World-State Continuity Error):
+    // Nếu các cảnh sau dùng Mỏ neo Bối cảnh nguyên vẹn (KYOTO_SHRINE có cổng Torii nguyên vẹn),
+    // thì Cảnh trước KHÔNG ĐƯỢC phá sập cổng Torii (mà phải đặt Rồng đứng PHÍA TRƯỚC cổng Torii để không xuyên cổng mà cổng vẫn nguyên vẹn!).
+    if (
+      shotSpec.environmentId === 'KYOTO_SHRINE' &&
+      /shattering.*torii|breaking.*torii|broken torii/i.test(combined) &&
+      !shotSpec.allowWorldStateMutation
+    ) {
+      issues.push({
+        type: 'SET_CONTINUITY_TORII_DESTRUCTION_MISMATCH',
+        detail: `${shotSpec.shotId} phá hủy cổng Torii ở đầu phim trong khi các Beat 2, 3, 4, 5, 6 phía sau vẫn dùng Mỏ neo Bối cảnh KYOTO_SHRINE có cổng Torii nguyên vẹn (lỗi rắc-cô hiện trường: cảnh trước phá cổng, cảnh sau cổng lại nguyên vẹn!).`,
+        learnedRule: 'RULE_ART_WORLD_STATE_07: Mọi thay đổi vật lý lên kiến trúc cố định (như cổng Torii) phải đồng bộ xuyên suốt toàn bộ các Shot sau. Nếu giữ cổng Torii nguyên vẹn ở các Shot sau, phải đặt @KURORYU đứng PHÍA TRƯỚC cổng Torii (standing IN FRONT OF the intact red Torii gate, clear of the crossbar) và dậm nát mặt đá dưới chân thay vì phá sập cổng Torii.'
+      });
+    }
+
     // Kiểm tra lỗi Orphan Weapon Hallucination: Cảnh chỉ có Rồng (không có Kenji) nhưng lại nhắc chữ "katana/sword" làm AI vẽ thanh kiếm cắm trên ngực Rồng!
     if (!shotSpec.subjects.includes('KENJI') && /katana|sword/i.test(combined)) {
       issues.push({
