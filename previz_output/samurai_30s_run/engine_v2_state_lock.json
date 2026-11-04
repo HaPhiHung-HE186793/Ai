@@ -1,0 +1,66 @@
+{
+  "version": "2.0.0",
+  "anchors": {
+    "KENJI": {
+      "mediaId": "46351645-0b10-4c90-8aee-9aefa18add2a",
+      "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/01_anchor_samurai_kenji_sheet.png"
+    },
+    "KURORYU": {
+      "mediaId": "26fb13b5-691b-4422-9455-842869f799f9",
+      "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/02_anchor_mecha_dragon_sheet.png"
+    },
+    "KYOTO_SHRINE": {
+      "mediaId": "a0c4766f-7c90-4408-bee1-fc945d93cfa5",
+      "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/03_anchor_kyoto_rain_temple_plate.png"
+    }
+  },
+  "shots": {
+    "beat1_ots_arrival_locked": {
+      "locked": true,
+      "configHash": "49af44848a0d73e0",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/shot1_8s_ots_arrival.mp4",
+      "trimStartSec": 0,
+      "trimEndSec": 6.2
+    },
+    "beat2_ecu_single_katana_draw_locked": {
+      "locked": true,
+      "configHash": "7ba8bf310ed171f5",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/shot2_8s_macro_katana_draw.mp4",
+      "trimStartSec": 4.2,
+      "trimEndSec": 8
+    },
+    "beat3_lowangle_dragon_stomp_locked": {
+      "locked": true,
+      "configHash": "20cd1e730a5d86f7",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/shot3_8s_lowangle_dragon_charge.mp4",
+      "trimStartSec": 0,
+      "trimEndSec": 4
+    },
+    "beat4_v2_bareheaded_samurai_sprint": {
+      "locked": true,
+      "configHash": "f9097e428725f620",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat4_v2_bareheaded_samurai_sprint_veo31_raw8s.mp4",
+      "startFrameMediaId": "1cc11fda-4668-4fbe-a8f0-7f39a065856d",
+      "endFrameMediaId": "9ac6996f-c08e-4b15-bfd9-34a913349769",
+      "trimStartSec": 0.2,
+      "trimEndSec": 5.8
+    },
+    "beat5_dragon_lightning_overcharge_locked": {
+      "locked": true,
+      "configHash": "18e3614f0ac43df9",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/shot3_8s_lowangle_dragon_charge.mp4",
+      "trimStartSec": 4.4,
+      "trimEndSec": 8
+    },
+    "beat6_v2_bareheaded_apex_clash_victory": {
+      "locked": true,
+      "configHash": "207a4620309dfc8c",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat6_v2_bareheaded_apex_clash_victory_veo31_raw8s.mp4",
+      "startFrameMediaId": "4b710fa7-6639-4304-bcca-18f5cc3ceb76",
+      "endFrameMediaId": "2b82ae22-821f-4156-af69-42e6287006ce",
+      "trimStartSec": 0.2,
+      "trimEndSec": 7.6
+    }
+  },
+  "lastUpdatedAt": "2026-11-04T03:21:32.653Z"
+}
