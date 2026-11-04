@@ -1,6 +1,6 @@
 {
   "studioVersion": "3.0.0-INTERNATIONAL-5-DEPT-PIPELINE",
-  "updatedAt": "2026-11-04T05:15:02.853Z",
+  "updatedAt": "2026-11-04T06:47:48.908Z",
   "departments": {
     "DEPT_01_SHOWRUNNER_DIRECTOR": {
       "name": "Phòng Đạo Diễn & Biên Kịch Phân Cảnh (Showrunner & Action Director Dept)",
@@ -14,7 +14,8 @@
         "RULE_DGA_01: Khóa trục 180 độ xuyên suốt trận đấu: @KENJI luôn trấn giữ bên Trái (Screen-Left, hướng nhìn và tấn công sang Phải); @KURORYU luôn trấn giữ bên Phải (Screen-Right, hướng nhìn và tấn công sang Trái).",
         "RULE_DGA_02: Cấm tuyệt đối hội chứng Cool Poster Syndrome (nhân vật quay lưng vào kẻ địch và chạy về phía ống kính máy quay).",
         "RULE_DGA_03: Mạch Nhân-Quả bắt buộc: Mỗi Beat phải là hệ quả vật lý trực tiếp của Beat liền trước (VD: Beat 3 Rồng vồ sang Trái -> Beat 4 Kenji nhảy sang Phải chém trúng lõi ngực -> Beat 5 Lõi ngực Rồng mang vết chém phát nổ điện từ -> Beat 6 Giao kiếm quyết định).",
-        "RULE_DGA_V3_LOCK: Beat 3 phải đặt Rồng ở bên Phải (Screen-Right) lao sang Trái về phía vai Kenji (OTS Screen-Left). Beat 5 phải đặc tả vết chém chéo rực lửa trên lõi ngực Rồng (hệ quả trực tiếp từ nhát chém của Kenji ở giây 0:18-0:19)."
+        "RULE_DGA_V3_LOCK: Beat 3 phải đặt Rồng ở bên Phải (Screen-Right) lao sang Trái về phía vai Kenji (OTS Screen-Left). Beat 5 phải đặc tả vết chém chéo rực lửa trên lõi ngực Rồng (hệ quả trực tiếp từ nhát chém của Kenji ở giây 0:18-0:19).",
+        "RULE_DGA_PROJECTILE_05: Cuối Beat 1 (0:04-0:05), Rồng bắt buộc phải bắn một luồng cầu lửa plasma bay thẳng trực diện vào vị trí của @KENJI, nối khớp hoàn hảo với cảnh @KENJI giơ kiếm nghiêng 45 độ đỡ cầu lửa ở đầu Beat 2 (0:06)."
       ],
       "learnedRulesHistory": [
         {
@@ -30,6 +31,13 @@
           "defectType": "SYMMETRIC_CENTER_DRAGON_AXIS_AND_MISSING_SLASH_WOUND",
           "defectDetail": "Ở bản V2, Beat 3 (0:11-0:14) và Beat 5 (0:20-0:23) dùng chung góc máy chính diện con Rồng đứng giữa màn hình, chưa khóa trục Phải->Trái đồng bộ với Beat 4 và chưa hiển thị vết chém chéo trên lõi ngực Rồng ở Beat 5.",
           "correctiveRuleAdded": "RULE_DGA_V3_LOCK: Beat 3 phải đặt Rồng ở bên Phải (Screen-Right) lao sang Trái về phía vai Kenji (OTS Screen-Left). Beat 5 phải đặc tả vết chém chéo rực lửa trên lõi ngực Rồng (hệ quả trực tiếp từ nhát chém của Kenji ở giây 0:18-0:19)."
+        },
+        {
+          "timestamp": "2026-11-04T06:43:43.710Z",
+          "beatId": "beat1_to_beat2_trajectory_audit",
+          "defectType": "UNMOTIVATED_DEFENSE_BROKEN_PROJECTILE_HANDOFF_00_05_TO_00_06",
+          "defectDetail": "Ở bản V3 giây 0:05, Rồng phóng tia lửa xuống đất ở 2 bên cột cổng (không bắn vào Samurai), làm cảnh Samurai giơ kiếm đỡ lửa ở giây 0:06 bị vô lý.",
+          "correctiveRuleAdded": "RULE_DGA_PROJECTILE_05: Cuối Beat 1 (0:04-0:05), Rồng bắt buộc phải bắn một luồng cầu lửa plasma bay thẳng trực diện vào vị trí của @KENJI, nối khớp hoàn hảo với cảnh @KENJI giơ kiếm nghiêng 45 độ đỡ cầu lửa ở đầu Beat 2 (0:06)."
         }
       ],
       "signOffHistory": [
@@ -140,6 +148,60 @@
           "status": "APPROVED_BY_DGA_DIRECTOR",
           "expertComment": "Trục 180 độ chuẩn xác (180-DEGREE LOCK: @KENJI on Screen-Left clashes with and parries @KURORYU on Screen-Right). Mạch nhân quả: [Wounded, overcharged Dragon from Beat 5 launches one final desperate strike from Screen-Right] => [Kenji parries the strike in a blinding shockwave, knocking the Dragon back into the mist and holding his victorious low-ready katana stance].",
           "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:43:43.711Z",
+          "beatId": "beat1_v4_torii_shatter_and_direct_fireball",
+          "expert": "Hollywood DGA Senior Action Director & Showrunner Inspector",
+          "score": 100,
+          "status": "APPROVED_BY_DGA_DIRECTOR_V4",
+          "expertComment": "Khoảng cách Proxemics: [15m -> 15m] | Trục 180 độ: 180-DEGREE LOCK: @KENJI Screen-Left Foreground (facing Right) <-> @KURORYU at 15m under Torii Gate (facing Left) | Mạch nhân quả: [Colossal Mecha-Dragon rises up beneath the wooden Torii gate at 15m distance] => [Dragon head physically shatters the upper wooden crossbar of the Torii gate into burning debris and blasts a stream of golden plasma fire straight at Kenji, forcing Kenji to block it with his katana in Beat 2].",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:46:38.010Z",
+          "beatId": "beat2_v3_ecu_rigid_45deg_katana",
+          "expert": "Hollywood DGA Senior Action Director & Showrunner Inspector",
+          "score": 100,
+          "status": "APPROVED_BY_DGA_DIRECTOR_V4",
+          "expertComment": "Khoảng cách Proxemics: [15m -> 15m] | Trục 180 độ: 180-DEGREE EYELINE LOCK: @KENJI on Screen-Left looking strictly Right, holding rigid 45-degree katana deflecting incoming dragon fireball | Mạch nhân quả: [Incoming golden plasma fireball blasted directly at Kenji at the end of Beat 1 (0:05)] => [Kenji blocks and slices the incoming fireball with his rigid 45-degree katana into sparks and white steam, then immediately sprints forward in Beat 3 to close the 15m gap].",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:46:49.424Z",
+          "beatId": "beat4_v2_charge_directly_at_dragon",
+          "expert": "Hollywood DGA Senior Action Director & Showrunner Inspector",
+          "score": 100,
+          "status": "APPROVED_BY_DGA_DIRECTOR_V4",
+          "expertComment": "Khoảng cách Proxemics: [15m -> 2m] | Trục 180 độ: 180-DEGREE LOCK: @KENJI sprints from Screen-Left (15m) to Screen-Right (2m), leaps and slashes @KURORYU chest core | Mạch nhân quả: [Having deflected the ranged fireball at 15m in Beat 2, Kenji charges across the courtyard to close the 15m distance] => [Kenji closes the gap from 15m to 2m, leaps mid-air to slash across the Dragon chest core, and lands 2 steps (2m) in front of the wounded Dragon].",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:47:03.479Z",
+          "beatId": "beat5_v3_ruptured_chest_reactor_no_sword",
+          "expert": "Hollywood DGA Senior Action Director & Showrunner Inspector",
+          "score": 100,
+          "status": "APPROVED_BY_DGA_DIRECTOR_V4",
+          "expertComment": "Khoảng cách Proxemics: [2m -> 2m] | Trục 180 độ: 180-DEGREE LOCK: @KURORYU on Screen-Right angled Left at 2m range, displaying the fresh diagonal molten gash across its chest reactor | Mạch nhân quả: [Direct physical damage from Kenji slashing the Dragon chest reactor at the end of Beat 3 (0:14)] => [The cracked chest reactor leaks black smoke and explodes with unstable golden overload energy at 2m range, driving the wounded Dragon to lunge wildly at Kenji in Beat 5].",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:47:13.858Z",
+          "beatId": "beat3_v3_dragon_lunge_right_to_left",
+          "expert": "Hollywood DGA Senior Action Director & Showrunner Inspector",
+          "score": 100,
+          "status": "APPROVED_BY_DGA_DIRECTOR_V4",
+          "expertComment": "Khoảng cách Proxemics: [2m -> 2m] | Trục 180 độ: 180-DEGREE LOCK: @KENJI on Screen-Left and @KURORYU on Screen-Right engaged at 2-meter close-quarters range | Mạch nhân quả: [Enraged by its overloading chest reactor in Beat 4, the Dragon standing 2 steps (2m) in front of Kenji rears up for a desperate close-range claw smash] => [The Dragon slams its claws down right at Kenji at 2m range in a blinding explosion of sparks, leading directly into Kenji parrying and knocking the Dragon back in Beat 6].",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:47:25.148Z",
+          "beatId": "beat6_v2_bareheaded_apex_clash_victory",
+          "expert": "Hollywood DGA Senior Action Director & Showrunner Inspector",
+          "score": 100,
+          "status": "APPROVED_BY_DGA_DIRECTOR_V4",
+          "expertComment": "Khoảng cách Proxemics: [2m -> 2m] | Trục 180 độ: 180-DEGREE LOCK: @KENJI on Screen-Left clashes with and parries @KURORYU on Screen-Right at 2m range | Mạch nhân quả: [Continuing directly from the 2m close-quarters explosion at the end of Beat 5 (0:23.5)] => [Kenji parries the Dragon backward in a massive shockwave of white steam and holds his victorious low-ready katana stance].",
+          "metrics": {}
         }
       ]
     },
@@ -195,6 +257,13 @@
           "defectType": "PROP_ORPHAN_WEAPON_HALLUCINATION_ON_CREATURE",
           "defectDetail": "beat5_v3_ruptured_chest_reactor_no_sword chỉ quay @KURORYU nhưng mô tả vết thương lại dùng từ \"katana/sword\", làm AI vẽ dư 1 thanh kiếm cắm trên ngực Rồng (vi phạm rắc-cô vì thanh kiếm vẫn đang nằm trên tay Kenji!).",
           "correctiveRuleAdded": "RULE_PROP_LEARNED_05: Khi mô tả vết thương trên cơ thể quái vật (@KURORYU), CẤM dùng danh từ vũ khí (\"katana\", \"sword\"); bắt buộc dùng \"MOLTEN DIAGONAL ARMOR FRACTURE AND CRACKED CHEST REACTOR (NO SWORD OR HILT STUCK IN CHEST)\"."
+        },
+        {
+          "timestamp": "2026-11-04T06:43:43.711Z",
+          "beatId": "beat1_v4_torii_shatter_and_direct_fireball",
+          "defectType": "PROP_UNCONSTRAINED_KATANA_HILT_AND_BLADE",
+          "defectDetail": "beat1_v4_torii_shatter_and_direct_fireball có thanh Katana nhưng chưa khóa cứng ràng buộc 1 chuôi kiếm liền mạch và lưỡi thép thẳng cứng 100%.",
+          "correctiveRuleAdded": "RULE_PROP_LEARNED_01: Mọi cú máy có Katana bắt buộc nhúng điều khoản vật lý: \"100% RIGID STRAIGHT STEEL KATANA BLADE (no drooping tip), SINGLE UNBROKEN STRAIGHT TSUKA HILT (no split pommel)\"."
         }
       ],
       "signOffHistory": [
@@ -299,6 +368,60 @@
         },
         {
           "timestamp": "2026-11-04T05:14:35.232Z",
+          "beatId": "beat6_v2_bareheaded_apex_clash_victory",
+          "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
+          "score": 100,
+          "status": "LOCKED_NODE_VERIFIED_BY_WETA_PROP_MASTER",
+          "expertComment": "Node beat6_v2_bareheaded_apex_clash_victory đã khóa bất biến SHA-256 và đạt chuẩn 3-Anchor DNA.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:43:43.712Z",
+          "beatId": "beat1_v4_torii_shatter_and_direct_fireball",
+          "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
+          "score": 100,
+          "status": "APPROVED_BY_WETA_PROP_MASTER",
+          "expertComment": "Đã tiêm 3 Mỏ Neo DNA gốc, khóa BAREHEADED (không mũ sắt), khóa 1 chuôi kiếm thẳng liền mạch (Single Tsuka Hilt) và lưỡi kiếm thép cứng 100%.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:46:38.011Z",
+          "beatId": "beat2_v3_ecu_rigid_45deg_katana",
+          "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
+          "score": 100,
+          "status": "LOCKED_NODE_VERIFIED_BY_WETA_PROP_MASTER",
+          "expertComment": "Node beat2_v3_ecu_rigid_45deg_katana đã khóa bất biến SHA-256 và đạt chuẩn 3-Anchor DNA.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:46:49.426Z",
+          "beatId": "beat4_v2_charge_directly_at_dragon",
+          "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
+          "score": 100,
+          "status": "LOCKED_NODE_VERIFIED_BY_WETA_PROP_MASTER",
+          "expertComment": "Node beat4_v2_charge_directly_at_dragon đã khóa bất biến SHA-256 và đạt chuẩn 3-Anchor DNA.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:47:03.481Z",
+          "beatId": "beat5_v3_ruptured_chest_reactor_no_sword",
+          "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
+          "score": 100,
+          "status": "LOCKED_NODE_VERIFIED_BY_WETA_PROP_MASTER",
+          "expertComment": "Node beat5_v3_ruptured_chest_reactor_no_sword đã khóa bất biến SHA-256 và đạt chuẩn 3-Anchor DNA.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:47:13.859Z",
+          "beatId": "beat3_v3_dragon_lunge_right_to_left",
+          "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
+          "score": 100,
+          "status": "LOCKED_NODE_VERIFIED_BY_WETA_PROP_MASTER",
+          "expertComment": "Node beat3_v3_dragon_lunge_right_to_left đã khóa bất biến SHA-256 và đạt chuẩn 3-Anchor DNA.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:47:25.150Z",
           "beatId": "beat6_v2_bareheaded_apex_clash_victory",
           "expert": "Weta Workshop Concept Art, Costume & Weapons Prop Master",
           "score": 100,
@@ -430,6 +553,60 @@
           "status": "LOCKED_NODE_VERIFIED_BY_ASC_DP",
           "expertComment": "Node beat6_v2_bareheaded_apex_clash_victory đã khóa bất biến và được nghiệm thu bố cục CinemaScope.",
           "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:45:19.072Z",
+          "beatId": "beat1_v4_torii_shatter_and_direct_fireball",
+          "expert": "ASC Director of Photography (DP) & Hollywood Script/Continuity Supervisor",
+          "score": 100,
+          "status": "APPROVED_BY_ASC_DP_AND_SCRIPT_SUPERVISOR",
+          "expertComment": "Start Frame (beat1_v4_torii_shatter_and_direct_fireball_start_frame.png) & End Frame (beat1_v4_torii_shatter_and_direct_fireball_end_frame.png) đạt chuẩn Trục 180 độ, Hướng mắt (Eyeline), và Hình học Vũ khí.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:46:38.012Z",
+          "beatId": "beat2_v3_ecu_rigid_45deg_katana",
+          "expert": "ASC Director of Photography (DP) & Hollywood Script/Continuity Supervisor",
+          "score": 100,
+          "status": "LOCKED_NODE_VERIFIED_BY_ASC_DP",
+          "expertComment": "Node beat2_v3_ecu_rigid_45deg_katana đã khóa bất biến và được nghiệm thu bố cục CinemaScope.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:46:49.427Z",
+          "beatId": "beat4_v2_charge_directly_at_dragon",
+          "expert": "ASC Director of Photography (DP) & Hollywood Script/Continuity Supervisor",
+          "score": 100,
+          "status": "LOCKED_NODE_VERIFIED_BY_ASC_DP",
+          "expertComment": "Node beat4_v2_charge_directly_at_dragon đã khóa bất biến và được nghiệm thu bố cục CinemaScope.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:47:03.482Z",
+          "beatId": "beat5_v3_ruptured_chest_reactor_no_sword",
+          "expert": "ASC Director of Photography (DP) & Hollywood Script/Continuity Supervisor",
+          "score": 100,
+          "status": "LOCKED_NODE_VERIFIED_BY_ASC_DP",
+          "expertComment": "Node beat5_v3_ruptured_chest_reactor_no_sword đã khóa bất biến và được nghiệm thu bố cục CinemaScope.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:47:13.861Z",
+          "beatId": "beat3_v3_dragon_lunge_right_to_left",
+          "expert": "ASC Director of Photography (DP) & Hollywood Script/Continuity Supervisor",
+          "score": 100,
+          "status": "LOCKED_NODE_VERIFIED_BY_ASC_DP",
+          "expertComment": "Node beat3_v3_dragon_lunge_right_to_left đã khóa bất biến và được nghiệm thu bố cục CinemaScope.",
+          "metrics": {}
+        },
+        {
+          "timestamp": "2026-11-04T06:47:25.152Z",
+          "beatId": "beat6_v2_bareheaded_apex_clash_victory",
+          "expert": "ASC Director of Photography (DP) & Hollywood Script/Continuity Supervisor",
+          "score": 100,
+          "status": "LOCKED_NODE_VERIFIED_BY_ASC_DP",
+          "expertComment": "Node beat6_v2_bareheaded_apex_clash_victory đã khóa bất biến và được nghiệm thu bố cục CinemaScope.",
+          "metrics": {}
         }
       ]
     },
@@ -444,9 +621,18 @@
       "permanentSOPRules": [
         "RULE_VES_01: Bắt buộc khóa Dual-Keyframe Sandwich (First Frame + Last Frame) khi gọi Veo 3.1 I2V.",
         "RULE_VES_02: Sau khi render xong video, bắt buộc trích xuất dải ảnh từng giây (1fps strip) của chính đoạn video đó để Chuyên gia VES soi lỗi phát sinh ở các giây giữa (như lỗi chuôi kiếm ở 0:09 hay lỗi cong mũi kiếm ở 0:07).",
-        "RULE_VES_03: Cắt bỏ hoàn toàn phần đuôi tĩnh (Dead-Tail Trimming) chỉ giữ lại cửa sổ chuyển động vàng (Peak Kinetic Window)."
+        "RULE_VES_03: Cắt bỏ hoàn toàn phần đuôi tĩnh (Dead-Tail Trimming) chỉ giữ lại cửa sổ chuyển động vàng (Peak Kinetic Window).",
+        "RULE_VES_PHYSICS_04: Khi vật thể khổng lồ (@KURORYU) vươn đầu qua gầm cổng Torii, thanh xà ngang phía trên của cổng Torii BẮT BUỘC PHẢI BỊ HÚC GÃY TUNG thành các mảnh gỗ vỡ bốc cháy (Rigid-Body Destruction Physics)."
       ],
-      "learnedRulesHistory": [],
+      "learnedRulesHistory": [
+        {
+          "timestamp": "2026-11-04T06:43:43.710Z",
+          "beatId": "beat1_v3_torii_collision_audit",
+          "defectType": "RIGID_BODY_TORII_CROSSBAR_INTERPENETRATION_AT_00_03",
+          "defectDetail": "Ở bản V3 giây 0:03, đầu Rồng ngóc lên xuyên qua thanh xà ngang bằng gỗ của cổng Torii mà cổng không bị gãy vỡ.",
+          "correctiveRuleAdded": "RULE_VES_PHYSICS_04: Khi vật thể khổng lồ (@KURORYU) vươn đầu qua gầm cổng Torii, thanh xà ngang phía trên của cổng Torii BẮT BUỘC PHẢI BỊ HÚC GÃY TUNG thành các mảnh gỗ vỡ bốc cháy (Rigid-Body Destruction Physics)."
+        }
+      ],
       "signOffHistory": [
         {
           "timestamp": "2026-11-04T04:58:25.530Z",
@@ -591,6 +777,84 @@
             "trimWindow": "0.2s -> 7.4s",
             "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat6_v2_bareheaded_apex_clash_victory_ves_1fps_strip.png"
           }
+        },
+        {
+          "timestamp": "2026-11-04T06:46:38.008Z",
+          "beatId": "beat1_v4_torii_shatter_and_direct_fireball",
+          "expert": "VES (Visual Effects Society) Senior Animation & Temporal Physics Supervisor",
+          "score": 71,
+          "status": "APPROVED_BY_VES_PHYSICS_SUPERVISOR_V4",
+          "expertComment": "Kiểm định dải 1fps (beat1_v4_torii_shatter_and_direct_fireball_ves_1fps_strip.png [0s -> 5.5s], Cự ly 15m->15m): Torii gate destruction demonstrates consistent rigid-body debris physics without clipping. Katana maintains temporal rigidity and hilt integrity. Spatial continuity and 180-degree axis are locked correctly between characters.",
+          "metrics": {
+            "trimWindow": "0s -> 5.5s",
+            "distanceWindow": "15m -> 15m",
+            "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat1_v4_torii_shatter_and_direct_fireball_ves_1fps_strip.png"
+          }
+        },
+        {
+          "timestamp": "2026-11-04T06:46:49.422Z",
+          "beatId": "beat2_v3_ecu_rigid_45deg_katana",
+          "expert": "VES (Visual Effects Society) Senior Animation & Temporal Physics Supervisor",
+          "score": 72,
+          "status": "APPROVED_BY_VES_PHYSICS_SUPERVISOR_V4",
+          "expertComment": "Kiểm định dải 1fps (beat2_v3_ecu_rigid_45deg_katana_ves_1fps_strip.png [0.2s -> 4.7s], Cự ly 15m->15m): Eyeline lock and 180-degree spatial continuity remain consistent facing right. Katana geometry maintains 45-degree rigidity across frames with stable energy collision physics.",
+          "metrics": {
+            "trimWindow": "0.2s -> 4.7s",
+            "distanceWindow": "15m -> 15m",
+            "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat2_v3_ecu_rigid_45deg_katana_ves_1fps_strip.png"
+          }
+        },
+        {
+          "timestamp": "2026-11-04T06:47:03.478Z",
+          "beatId": "beat4_v2_charge_directly_at_dragon",
+          "expert": "VES (Visual Effects Society) Senior Animation & Temporal Physics Supervisor",
+          "score": 98,
+          "status": "APPROVED_BY_VES_PHYSICS_SUPERVISOR_V4",
+          "expertComment": "Kiểm định dải 1fps (beat4_v2_charge_directly_at_dragon_ves_1fps_strip.png [0.2s -> 5.4s], Cự ly 15m->2m): The sequence maintains flawless 180-degree spatial continuity with Kenji on screen-left charging and leaping rightward toward Kuroryu on screen-right. Distance closes smoothly from 15m to 2m, leading to a high-energy particle impact at the dragon's chest core. The katana blade remains straight and rigid with consistent visual glow, and character orientation remains facing the target throughout.",
+          "metrics": {
+            "trimWindow": "0.2s -> 5.4s",
+            "distanceWindow": "15m -> 2m",
+            "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat4_v2_charge_directly_at_dragon_ves_1fps_strip.png"
+          }
+        },
+        {
+          "timestamp": "2026-11-04T06:47:13.857Z",
+          "beatId": "beat5_v3_ruptured_chest_reactor_no_sword",
+          "expert": "VES (Visual Effects Society) Senior Animation & Temporal Physics Supervisor",
+          "score": 74,
+          "status": "APPROVED_BY_VES_PHYSICS_SUPERVISOR_V4",
+          "expertComment": "Kiểm định dải 1fps (beat5_v3_ruptured_chest_reactor_no_sword_ves_1fps_strip.png [0.2s -> 4.2s], Cự ly 2m->2m): Kuroryu maintains consistent screen-right orientation at 2m distance with stable visual effects on the ruptured chest reactor across all frames.",
+          "metrics": {
+            "trimWindow": "0.2s -> 4.2s",
+            "distanceWindow": "2m -> 2m",
+            "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat5_v3_ruptured_chest_reactor_no_sword_ves_1fps_strip.png"
+          }
+        },
+        {
+          "timestamp": "2026-11-04T06:47:25.145Z",
+          "beatId": "beat3_v3_dragon_lunge_right_to_left",
+          "expert": "VES (Visual Effects Society) Senior Animation & Temporal Physics Supervisor",
+          "score": 98,
+          "status": "APPROVED_BY_VES_PHYSICS_SUPERVISOR_V4",
+          "expertComment": "Kiểm định dải 1fps (beat3_v3_dragon_lunge_right_to_left_ves_1fps_strip.png [0.2s -> 4.7s], Cự ly 2m->2m): Excellently executed sequential sequence. Kenji remains locked on Screen-Left facing Screen-Right toward Kuroryu throughout all frames, upholding 180-degree axis continuity at a consistent ~2m range. Weapon geometry is maintained without blade bending or hilt splitting. Rigid-body destruction physics are dynamically accurate, featuring impact sparks, splashing water, and shattered stone debris interacting realistically with the environment.",
+          "metrics": {
+            "trimWindow": "0.2s -> 4.7s",
+            "distanceWindow": "2m -> 2m",
+            "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat3_v3_dragon_lunge_right_to_left_ves_1fps_strip.png"
+          }
+        },
+        {
+          "timestamp": "2026-11-04T06:47:34.705Z",
+          "beatId": "beat6_v2_bareheaded_apex_clash_victory",
+          "expert": "VES (Visual Effects Society) Senior Animation & Temporal Physics Supervisor",
+          "score": 71,
+          "status": "APPROVED_BY_VES_PHYSICS_SUPERVISOR_V4",
+          "expertComment": "Kiểm định dải 1fps (beat6_v2_bareheaded_apex_clash_victory_ves_1fps_strip.png [0.2s -> 7.4s], Cự ly 2m->2m): Consistent 180-degree axis maintained. Blade rigidity and impact particle physics remain temporally stable across all frames at 2m range.",
+          "metrics": {
+            "trimWindow": "0.2s -> 7.4s",
+            "distanceWindow": "2m -> 2m",
+            "stripPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat6_v2_bareheaded_apex_clash_victory_ves_1fps_strip.png"
+          }
         }
       ]
     },
@@ -605,9 +869,18 @@
       "permanentSOPRules": [
         "RULE_POST_01: Khóa mã băm SHA-256 cho từng Beat đã được 4 phòng trước nghiệm thu; khi sửa 1 Beat tuyệt đối không động chạm tới các Beat khác.",
         "RULE_POST_02: Áp dụng bộ giới hạn vùng sáng cao (SMPTE Highlight Limiter) để giữ chi tiết lõi tia lửa vàng và kiếm khí.",
-        "RULE_POST_03: Chuẩn hóa âm lượng tổng thể theo chuẩn EBU R128 và xuất bảng kiểm định 1fps toàn bộ bộ phim."
+        "RULE_POST_03: Chuẩn hóa âm lượng tổng thể theo chuẩn EBU R128 và xuất bảng kiểm định 1fps toàn bộ bộ phim.",
+        "RULE_POST_PROXEMICS_06: Khóa Biểu đồ Khoảng cách Thu hẹp Một chiều (15m -> 15m -> [15m->2m] -> 2m -> 2m -> 2m). Đặt cảnh chạy thu hẹp khoảng cách (15m->2m) ở Beat 3 trước, sau đó toàn bộ các Beat 4, 5, 6 đều diễn ra ở đúng cự ly cận chiến 2m!"
       ],
-      "learnedRulesHistory": [],
+      "learnedRulesHistory": [
+        {
+          "timestamp": "2026-11-04T06:43:43.710Z",
+          "beatId": "beat3_to_beat4_proxemics_audit",
+          "defectType": "SPATIAL_DISTANCE_REGRESSION_2M_TO_12M_AT_00_12_TO_00_15",
+          "defectDetail": "Ở bản V3, giây 0:12 hai nhân vật đã đứng sát nhau 2 bước chân (2m), nhưng sang giây 0:15 lại bị nhảy lùi ra xa 12m để chạy lại.",
+          "correctiveRuleAdded": "RULE_POST_PROXEMICS_06: Khóa Biểu đồ Khoảng cách Thu hẹp Một chiều (15m -> 15m -> [15m->2m] -> 2m -> 2m -> 2m). Đặt cảnh chạy thu hẹp khoảng cách (15m->2m) ở Beat 3 trước, sau đó toàn bộ các Beat 4, 5, 6 đều diễn ra ở đúng cự ly cận chiến 2m!"
+        }
+      ],
       "signOffHistory": [
         {
           "timestamp": "2026-11-04T05:09:03.757Z",
@@ -637,6 +910,29 @@
             "truePeakDbtp": -3.2,
             "clippingDetected": false,
             "status": "PASS_BROADCAST_SPEC"
+          }
+        },
+        {
+          "timestamp": "2026-11-04T06:47:48.908Z",
+          "beatId": "FINAL_V4_MASTER_DELIVERABLE",
+          "expert": "ACE Senior Film Editor, CSI Master Colorist & Dolby/EBU R128 Re-Recording Mixer",
+          "score": 100,
+          "status": "APPROVED_FOR_INTERNATIONAL_RELEASE_V4",
+          "expertComment": "Master 40_SAMURAI_V4_PHYSICS_PROXEMICS_MASTER.mp4 đạt chuẩn Vật lý Va chạm, Đạn đạo Liên cảnh & Biểu đồ Khoảng cách Một chiều (Beat 1 (beat1_v4_torii_shatter_and_direct_fireball): [15m -> 15m] -> Beat 2 (beat2_v3_ecu_rigid_45deg_katana): [15m -> 15m] -> Beat 3 (beat4_v2_charge_directly_at_dragon): [15m -> 2m] -> Beat 4 (beat5_v3_ruptured_chest_reactor_no_sword): [2m -> 2m] -> Beat 5 (beat3_v3_dragon_lunge_right_to_left): [2m -> 2m] -> Beat 6 (beat6_v2_bareheaded_apex_clash_victory): [2m -> 2m]). EBU R128 = -16.9 LUFS / -3 dBTP.",
+          "metrics": {
+            "standard": "EBU R128 / Netflix Cinema Spec (-16.0 LUFS, <= -1.0 dBTP)",
+            "integratedLoudnessLufs": -16.9,
+            "truePeakDbtp": -3,
+            "clippingDetected": false,
+            "status": "PASS_BROADCAST_SPEC",
+            "proxemicsDistanceGraph": [
+              "Beat 1 (beat1_v4_torii_shatter_and_direct_fireball): [15m -> 15m]",
+              "Beat 2 (beat2_v3_ecu_rigid_45deg_katana): [15m -> 15m]",
+              "Beat 3 (beat4_v2_charge_directly_at_dragon): [15m -> 2m]",
+              "Beat 4 (beat5_v3_ruptured_chest_reactor_no_sword): [2m -> 2m]",
+              "Beat 5 (beat3_v3_dragon_lunge_right_to_left): [2m -> 2m]",
+              "Beat 6 (beat6_v2_bareheaded_apex_clash_victory): [2m -> 2m]"
+            ]
           }
         }
       ]
