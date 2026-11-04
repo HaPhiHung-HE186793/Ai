@@ -17,6 +17,18 @@ Kích hoạt ngay khi người dùng:
 
 ---
 
+## 🧪 Luật Thực Nghiệm (ưu tiên cao nhất — đè lên mọi quy chuẩn bên dưới nếu mâu thuẫn)
+Rút ra từ các thí nghiệm đo được ngày 2026-11-04. Chi tiết và số liệu: [edit-cut-continuity-playbook.md](./references/edit-cut-continuity-playbook.md) và [docs/AI_FILM_KNOWLEDGE_PACK.md](../../docs/AI_FILM_KNOWLEDGE_PACK.md).
+1. **Không nối đuôi để kéo dài cảnh.** Lấy khung cuối shot trước làm khung đầu shot sau khiến thế giới trôi dần (điểm khớp với nơi thật 283 → 12 sau 32 giây), màu rực dần và camera khựng ở mỗi chỗ nối.
+2. **Một ảnh toàn cảnh gốc cho mỗi bối cảnh.** Mọi ảnh đầu (start frame) được tạo từ ảnh gốc này (đưa làm reference đầu tiên, kèm tiền tố khoá vị trí), chỉ đổi góc máy.
+3. **Sơ đồ bối cảnh + trục 180° + bảng trạng thái** được viết trước khi viết prompt. Mỗi shot có trường `state` (vũ khí, vết thương, lửa, vị trí). Mọi prompt ghi rõ hướng (left → right).
+4. **Shot 1,5–2,5 giây, mỗi shot một hành động.** Veo vẫn tạo 8 giây, nhưng chỉ dùng đoạn tốt nhất (thường trong khoảng 0,3–3,5 giây); hầu hết clip biến dạng từ giây 3–5.
+5. **Duyệt storyboard trước khi tạo video**: kiểm hướng, tỷ lệ, trạng thái, thứ xuất hiện sớm. Sửa ở bước ảnh (tạo lại hoặc lật ngang), không sửa ở bước video.
+6. **Hai nhân vật không tiếp xúc vật lý trong cùng khung.** Đòn đánh và hậu quả tách thành 2 shot. Nhưng vẫn phải có shot liên kết tĩnh (toàn cảnh, qua vai) để khán giả biết ai ở đâu.
+7. **Dựng theo nhịp nhạc** (độ dài shot là bội số của phách), chỉnh màu chung, rồi **soi hai bên mọi chỗ cắt** trước khi xuất bản.
+
+---
+
 ## 🛡️ 6 Quy Chuẩn Vàng Bất Di Bất Dịch (Golden Rules)
 Trước và trong khi chạy quy trình, Agent **BẮT BUỘC** tuân thủ 6 quy tắc sau (chi tiết xem tại [golden-rules-and-troubleshooting.md](./references/golden-rules-and-troubleshooting.md) và [MEMORY.md](../../../MEMORY.md)):
 1. **3-Panel Character Sheet (`#808080`) + Khóa Trọn Bộ Folder 3 Phần Trong Tab `"Nhân vật"` Ngay Tại Giai Đoạn 2 (`MEM-10`)**:
@@ -34,7 +46,7 @@ Trước và trong khi chạy quy trình, Agent **BẮT BUỘC** tuân thủ 6 q
    - Dùng `🍌 Nano Banana Pro` (0 Credit) cho toàn bộ Character Sheet, Environment Lock, Start/End Frame Keyframes.
    - Dùng `Veo 3.1 - Lite` (50 Credits) hoặc `Veo 3.1 - Fast` (100 Credits) cho bước quay video chính thức để đảm bảo độ nhất quán nhân vật cao nhất và có âm thanh gốc đồng bộ (Native Audio/SFX).
 5. **First Frame + Last Frame Control & CANVAS Memory**:
-   - Cảnh nối tiếp (`CONTINUOUS_MATCH_FRAME`): Dùng khung hình cuối của cảnh trước hoặc Start Frame chuẩn làm `firstFrameImageMediaId`.
+   - Cảnh nối tiếp (`CONTINUOUS_MATCH_FRAME`): Dùng **Start Frame tạo từ ảnh toàn cảnh gốc** làm `firstFrameImageMediaId`. ⚠️ Không dùng khung hình cuối của cảnh trước (nối đuôi), vì đã đo được thế giới trôi dần (xem Luật Thực Nghiệm số 1).
    - Cảnh chuyển trạng thái lớn (`A_TO_B_BRIDGE`): Truyền cả `firstFrameImageMediaId` + `lastFrameImageMediaId` (nếu `Veo 3.1` yêu cầu `durationSeconds: 8` cho chế độ nối 2 đầu, tự động fallback từ `4s` lên `8s` theo `MEM-07`).
    - Cảnh biến đổi ngoại hình (`isDnaStateShift`): Cập nhật mỏ neo `canvasMemoryAnchorMediaId` để vết thương/trạng thái giáp mới được giữ nguyên ở các cảnh sau (`MEM-05`).
 6. **Giới hạn Kỹ thuật Ngầm của `flow-sdk`**:
@@ -42,7 +54,7 @@ Trước và trong khi chạy quy trình, Agent **BẮT BUỘC** tuân thủ 6 q
    - Độ phân giải truyền vào `Flow.generate.video` chỉ dùng `"720p"` (cho `Veo 3.1`) hoặc `"360p"` (cho `Omni 1.1 Flash`) để tránh lỗi `Error("pl")` (`MEM-02`).
 7. **Cấu trúc Kịch bản & Prompt 3 Giai Đoạn (`Khởi động/Chuẩn bị` $\rightarrow$ `Nội dung Ý chính` $\rightarrow$ `Hậu quả/Dư chấn` — `MEM-16`)**:
    - **Vĩ mô toàn bộ phim (`Macro 3-Phase`)**: Kể cả khi người dùng chỉ nhập 1 ý chính ngắn gọn, Đạo diễn AI tự động chia tổng số cảnh thành **20% Đầu (`PRE_MAIN_BUILDUP`: Khởi động / Chuẩn bị / Điềm báo trước cơn bão)** $\rightarrow$ **60% Giữa (`MAIN_CLIMAX_CONFLICT`: Nội dung Ý chính & Cao trào)** $\rightarrow$ **20% Cuối (`POST_MAIN_AFTERMATH`: Hậu quả chiến trường, thương tích, số phận kẻ bại trận & dư chấn khải hoàn)**.
-   - **Vi mô từng cảnh 8 giây (`Micro 3-Beat Temporal Prompt`)**: Mọi prompt Storyboard & Video đều khóa đủ 3 nhịp vật lý: **`[0.0s-2.5s Preparation/Wind-up: preparationBeatEn]`** $\rightarrow$ **`[2.5s-5.5s Main Action/Strike: mainActionBeatEn]`** $\rightarrow$ **`[5.5s-8.0s Immediate Aftermath/Fallout: aftermathConsequenceEn]`**.
+   - ⚠️ *Đã thay thế bởi Luật Thực Nghiệm số 4*: chia 3 nhịp thành **3 shot ngắn riêng biệt**, mỗi shot một hành động, không nhồi cả 3 nhịp vào một prompt 8 giây. Cách cũ để tham khảo — **Vi mô từng cảnh 8 giây (`Micro 3-Beat Temporal Prompt`)**: Mọi prompt Storyboard & Video đều khóa đủ 3 nhịp vật lý: **`[0.0s-2.5s Preparation/Wind-up: preparationBeatEn]`** $\rightarrow$ **`[2.5s-5.5s Main Action/Strike: mainActionBeatEn]`** $\rightarrow$ **`[5.5s-8.0s Immediate Aftermath/Fallout: aftermathConsequenceEn]`**.
 8. **Bộ Chuyển Đổi Cảm Xúc & Độ Đã Mắt Chuẩn Studio Lớn (`Story-to-Spectacle DOP Engine` — `MEM-17`)**:
    - Tự động dịch cốt truyện chữ thông thường thành 5 lớp điện ảnh của *Pixar / Ufotable / Fortiche / DeepMind*: **(1) `Show, Don't Tell` (`visualExternalizationEn`)**, **(2) Vật chuẩn Tỷ lệ Tiền cảnh & Quán tính Khối lượng (`scaleAndInertiaEn`)**, **(3) Nén Lò Xo Cảm Xúc Sakuga & Khoảnh khắc Nghịch cảnh (`emotionalTensionMode` + `Sakuga Audio Drop`)**, **(4) Phản ứng Dây chuyền Môi trường & Ống kính (`environmentalCollateralEn`)**, và **(5) Bản đồ Màu sắc Tâm lý (`colorScriptMoodEn`)**.
 9. **Giáo Trình Đạo Diễn & Bàn Dựng Trường Lớp Studio Quốc Tế (`USC / AFI / CalArts / Walter Murch / DaVinci Resolve DI` — `MEM-18`)**:
