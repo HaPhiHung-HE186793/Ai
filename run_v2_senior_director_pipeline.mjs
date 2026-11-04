@@ -85,14 +85,22 @@ async function main() {
       trimEndSec: 6.2,
     },
 
-    // BEAT 2: Giữ nguyên Shot 2 đã khóa, lấy từ 4.2s -> 8.0s (bắt đầu đúng lúc kiếm ngang ngực bốc lửa rồi nâng lên thế thủ Jōdan 1 lần duy nhất!)
+    // BEAT 2 (SURGICAL FIX CHO GIÂY 0:09): Thay thế Shot 2 V1 (bị lỗi tách đôi chuôi kiếm ở giây cuối) bằng Node V2 khóa 2 đầu Start + End Frame!
+    // Các Beat 1, 3, 4, 5, 6 giữ nguyên 100% (Immutable Node Lock) — chứng minh sửa 1 điểm KHÔNG làm lệch các đoạn khác!
     {
-      shotId: 'beat2_ecu_single_katana_draw_locked',
+      shotId: 'beat2_v2_ecu_unbroken_katana_guard',
       subjects: ['KENJI'],
       environmentId: 'KYOTO_SHRINE',
-      lockedSourceVideo: path.join(RUN_DIR, 'shot2_8s_macro_katana_draw.mp4'),
-      trimStartSec: 4.2,
-      trimEndSec: 8.0,
+      cameraLens: '85mm Anamorphic Extreme Close-Up (ECU) on face and upper chest, creamy elliptical bokeh rain',
+      startFrameActionEn:
+        'Extreme close-up on @KENJI (BAREHEADED with tied-back wet dark hair, visible vertical scar on left cheek, NO HELMET). He holds his glowing amber plasma katana horizontally across his lower chest with his gloved right hand gripping a SINGLE continuous straight hilt (tsuka) just below the glowing amber guard (tsuba), while his left hand rests cleanly on the black scabbard out of frame. Raindrops splatter against the glowing blade.',
+      endFrameActionEn:
+        'Extreme close-up on @KENJI (BAREHEADED with tied-back wet dark hair, visible vertical scar on left cheek, NO HELMET). He raises the glowing amber plasma katana blade diagonally across his face in a fierce one-handed high guard, his gloved right hand firmly gripping the SINGLE continuous unbroken hilt (only ONE hilt pommel visible, zero split handle, zero second hand cluttering the pommel) as fiery orange light reflects in his eyes.',
+      videoKinematicsEn:
+        '[0.0s-2.0s] Raindrops roll down the samurai scarred cheek in extreme close-up as the glowing amber katana blade hums horizontally across his chest, held firmly in his gloved right hand on a single straight unbroken hilt. [2.0s-5.5s] With smooth, deadly control, his right hand raises the glowing amber katana blade diagonally upward in front of his eyes, slicing through falling raindrops and sending orange sparks into the mist. [5.5s-8.0s] He locks the glowing blade in a rock-steady diagonal guard in front of his scarred face, one single continuous hilt in his right fist.',
+      sfxCueEn: 'resonant metallic plasma katana hum, raindrops sizzling on hot blade, intense breath',
+      trimStartSec: 0.4,
+      trimEndSec: 5.4,
     },
 
     // BEAT 3: Giữ nguyên nửa đầu Shot 3 (0.0s -> 4.0s), cắt ngay trên đỉnh cú giẫm chân trước khi rồng nhảy lùi ở 4.2s!

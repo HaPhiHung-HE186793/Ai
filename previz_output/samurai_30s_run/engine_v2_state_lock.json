@@ -60,7 +60,16 @@
       "endFrameMediaId": "2b82ae22-821f-4156-af69-42e6287006ce",
       "trimStartSec": 0.2,
       "trimEndSec": 7.6
+    },
+    "beat2_v2_ecu_unbroken_katana_guard": {
+      "locked": true,
+      "configHash": "671a3a9b56c0dc6e",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat2_v2_ecu_unbroken_katana_guard_veo31_raw8s.mp4",
+      "startFrameMediaId": "328a6bee-1244-4aec-926d-b30570d81395",
+      "endFrameMediaId": "a51b3c9e-042d-46c4-aa38-f84fae15f7ec",
+      "trimStartSec": 0.4,
+      "trimEndSec": 5.4
     }
   },
-  "lastUpdatedAt": "2026-11-04T03:21:32.653Z"
+  "lastUpdatedAt": "2026-11-04T03:45:24.010Z"
 }

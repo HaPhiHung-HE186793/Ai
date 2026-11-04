@@ -6,8 +6,8 @@
   ],
   "broadcastAudioTelemetry": {
     "standard": "EBU R128 / Netflix Cinema Spec (-16.0 LUFS, <= -1.0 dBTP)",
-    "integratedLoudnessLufs": -17.2,
-    "truePeakDbtp": -3.9,
+    "integratedLoudnessLufs": -17,
+    "truePeakDbtp": -3.8,
     "clippingDetected": false,
     "status": "PASS_BROADCAST_SPEC"
   },
@@ -24,9 +24,9 @@
       "durationSec": 6.2
     },
     {
-      "shotId": "beat2_ecu_single_katana_draw_locked",
-      "trimWindow": "4.2s -> 8s",
-      "durationSec": 3.8
+      "shotId": "beat2_v2_ecu_unbroken_katana_guard",
+      "trimWindow": "0.4s -> 5.4s",
+      "durationSec": 5
     },
     {
       "shotId": "beat3_lowangle_dragon_stomp_locked",

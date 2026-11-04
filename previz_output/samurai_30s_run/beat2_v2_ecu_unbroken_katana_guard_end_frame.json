@@ -1,0 +1,19 @@
+{
+  "mediaId": "a51b3c9e-042d-46c4-aa38-f84fae15f7ec",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat2_v2_ecu_unbroken_katana_guard_end_frame.png",
+  "refIdsUsed": [
+    "328a6bee-1244-4aec-926d-b30570d81395",
+    "46351645-0b10-4c90-8aee-9aefa18add2a",
+    "a0c4766f-7c90-4408-bee1-fc945d93cfa5"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 74,
+      "helmetDetected": false,
+      "splitGridDetected": false,
+      "reason": "Keyframe strictly adheres to continuity rules: character is bareheaded with tied-back hair, presented in a single cinematic frame, with matching armor textures and glowing accents."
+    }
+  }
+}
