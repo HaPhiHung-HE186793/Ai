@@ -1,0 +1,12 @@
+# Local Blender 4.2 binary extraction (1.3GB)
+tools/
+
+# Python bytecode & Blender backup files
+__pycache__/
+*.py[cod]
+*.blend1
+
+# Intermediate raw frame-by-frame PNG pass directories (keep final MP4s, audit PNGs, .blend files, and samurai_30s_run/)
+previz_output/frames_*/
+previz_output/pure_blender_s*/
+
