@@ -1,57 +1,56 @@
-# 🏛️ AI Director Engine V2 (Senior-Level Deterministic Compiler & 1fps International QC)
-## Dự án: *"CHRONO BLADE: Samurai Cyber-Ronin vs. Obsidian Mecha-Dragon"* (30s Director's Cut)
+# 🏛️ Bộ Máy 5 Phòng Ban Sản Xuất Phim Quốc Tế (V3 International Film Studio Architecture)
+## Dự án: *"CHRONO BLADE: Samurai Cyber-Ronin vs. Obsidian Mecha-Dragon"* (30s V3 International Master)
 
 > [!IMPORTANT]
-> **Bước nhảy vọt từ V1 (Raw Script) lên V2 (Senior Deterministic Compiler Engine):**
-> 1. **Khóa cứng Rắc-cô bằng Code ([`DirectorCompilerEngine.mjs`](file:///mnt/data/backup/project_personal/AI/engine/DirectorCompilerEngine.mjs))**: Tự động tiêm đủ 3 Mỏ Neo DNA (`[KENJI, KURORYU, KYOTO_SHRINE]`) + Khóa phủ định phục trang (`BAREHEADED, NO HELMET, NO KABUTO, SINGLE SCABBARD`) — xóa sổ 100% lỗi tự mọc mũ sắt Kabuto và nhân đôi vỏ kiếm ở cuối phim.
-> 2. **Trạm Gác Ảnh Tĩnh 0-Credit (`PreFlightVisionGate`) + Khóa 2 Đầu (`Start Frame + End Frame`)**: Kiểm duyệt ảnh tĩnh bằng Vision Rubric trước khi quay `Veo 3.1`, và khóa cả điểm đầu lẫn điểm cuối cho các cảnh mới.
-> 3. **Cắt Nhịp Khoảnh Khắc Vàng (`Golden-Window Cut-on-Action`) & Dựng Song Song (`Parallel Cross-Cutting`)**: Giữ nguyên các Node đã khóa (`locked: true`), cắt bỏ hoàn toàn đoạn lặp rút kiếm lần 1 ở Shot 2 (`0.0s–4.2s`) và chèn cảnh Samurai lao tới vào giữa 2 nhịp của Shot 3 để xóa sạch điểm nhảy ở `t=20s`.
-> 4. **Chuẩn Phát Sóng Quốc Tế (`EBU R128` + `SMPTE Soft-Knee Highlight Roll-off`)**: Đạt **`-17.2 LUFS`** và **`True Peak = -3.9 dBTP`** (an toàn tuyệt đối, không bị Clipping `+0.1 dBTP` như V1).
+> **Kiến trúc 5 Phòng Ban Độc Lập Kiểm Soát Lẫn Nhau ([`engine/departments/`](file:///mnt/data/backup/project_personal/AI/engine/departments/DepartmentKnowledgeBase.mjs)):**
+> 1. **Phòng 1 — Đạo Diễn & Biên Kịch Phân Cảnh ([`ShowrunnerDirectorDept.mjs`](file:///mnt/data/backup/project_personal/AI/engine/departments/ShowrunnerDirectorDept.mjs))**: Chuyên gia **DGA Action Director** kiểm định Mạch Nhân-Quả (`Causal Chain`) và khóa **Trục 180 Độ (`Screen-Left Kenji <-> Screen-Right Dragon`)** xuyên suốt 30 giây.
+> 2. **Phòng 2 — Thiết Kế Mỹ Thuật, Phục Trang & Đạo Cụ ([`ArtCostumePropDept.mjs`](file:///mnt/data/backup/project_personal/AI/engine/departments/ArtCostumePropDept.mjs))**: Chuyên gia **Weta Workshop Prop Master** khóa 3 Mỏ Neo DNA (`@KENJI`, `@KURORYU`, `@KYOTO_SHRINE`), khóa **Lưỡi kiếm thép thẳng 100% (`Rigid 45° Blade`)**, **1 Chuôi kiếm liền mạch (`Single Unbroken Tsuka Hilt`)**, và chặn lỗi mọc vũ khí thừa trên cơ thể quái vật (`RULE_PROP_LEARNED_05`).
+> 3. **Phòng 3 — Storyboard, 3D Layout & Quay Phim ([`StoryboardLayoutPrevizDept.mjs`](file:///mnt/data/backup/project_personal/AI/engine/departments/StoryboardLayoutPrevizDept.mjs))**: Chuyên gia **ASC DP & Script Supervisor** soi từng cặp Keyframe (`Start/End Frame`) bằng Vision AI ở mức **0 Credit** trước khi bàn giao render video.
+> 4. **Phòng 4 — Diễn Hoạt & Render Video AI ([`VfxAnimationVideoDept.mjs`](file:///mnt/data/backup/project_personal/AI/engine/departments/VfxAnimationVideoDept.mjs))**: Chuyên gia **VES Temporal Physics Supervisor** render `Veo 3.1` với khóa kẹp 2 đầu và trích xuất dải ảnh từng giây (`1fps strip`) của từng clip để bắt lỗi biến dạng vật lý ở các giây giữa.
+> 5. **Phòng 5 — Hậu Kỳ: Dựng Phim ACE, Màu SMPTE & Âm Thanh EBU R128 ([`EditorialColorSoundPostDept.mjs`](file:///mnt/data/backup/project_personal/AI/engine/departments/EditorialColorSoundPostDept.mjs))**: Khóa mã băm bất biến `SHA-256` cho từng Beat, hạ cháy sáng SMPTE và chuẩn hóa âm lượng đạt **`-17.0 LUFS / -3.2 dBTP`**.
 
 ---
 
-## 🏆 1. Video Master V2 Chuẩn QC Quốc Tế (`20_SAMURAI_V2_SENIOR_ENGINE_MASTER.mp4`)
+## 🏆 1. Bản Master V3 Chuẩn 5 Phòng Ban Quốc Tế (`30_SAMURAI_V3_5DEPT_INTERNATIONAL_MASTER.mp4`)
 
-![Bản Phim Master V2 (30s) qua AI Director Engine V2](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/20_SAMURAI_V2_SENIOR_ENGINE_MASTER.mp4)
+![Bản Phim Master V3 (30s) sau khi 5 Chuyên Gia Quốc Tế Kiểm Định & Cải Tiến](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/30_SAMURAI_V3_5DEPT_INTERNATIONAL_MASTER.mp4)
 
-### 🔧 Bằng Chứng Surgical Node Fix tại Giây `00:08 -> 00:10` (`24_SURGICAL_FIX_00_09_HILT_VERIFICATION.png`)
-- **Chỉ mở khóa duy nhất Beat 2 (`beat2_v2_ecu_unbroken_katana_guard`)**, giữ nguyên 100% các Beat 1, 3, 4, 5, 6 (`Immutable Node Lock`).
-- Khóa cả `Start Frame` lẫn `End Frame` với chuôi kiếm liền mạch duy nhất (`SINGLE CONTINUOUS UNBROKEN HILT, ZERO SPLIT POMMEL`), xóa sạch hoàn toàn lỗi lòi đuôi kiếm ở giây `0:09` kèm hiệu ứng hơi nước bốc lên khi mưa chạm lưỡi kiếm nóng!
+### ⚖️ Video Đối Chiếu Side-by-Side: Bản V2 (Trái) vs. Bản V3 Có 5 Chuyên Gia Quốc Tế (Phải)
 
-![Bằng chứng Surgical Fix tại t=00:08, 00:09, 00:10 — Chuôi kiếm liền mạch thẳng tắp 100%](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/24_SURGICAL_FIX_00_09_HILT_VERIFICATION.png)
-
-### 🎯 Bằng Chứng Surgical Blocking Fix tại Giây `00:15 -> 00:19` (`25_SURGICAL_FIX_00_15_TO_19_CHARGE_AT_DRAGON.png`)
-- **Chỉ mở khóa duy nhất Beat 4 (`beat4_v2_charge_directly_at_dragon`)**, giữ nguyên 100% các Beat 1, 2 (chuôi kiếm đã sửa), 3, 5, 6!
-- Khóa chặt **Trục 180 Độ (`Left-to-Right Attack Vector` + `BackTurned: false` trong `PreFlightVisionGate`)**: Samurai ở bên **Trái** lao thẳng về phía **Phải** hướng trực diện vào con Rồng (`t=00:15`), bật nhảy lên không trung (`t=00:17`), và bổ nhát kiếm lửa nổ tung tia lửa điện ngay giữa ngực Rồng (`t=00:19`)!
-
-![Bằng chứng Surgical Blocking Fix tại t=00:15, 00:17, 00:19 — Samurai lao từ Trái sang Phải chém thẳng vào ngực Rồng](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/25_SURGICAL_FIX_00_15_TO_19_CHARGE_AT_DRAGON.png)
+![So sánh Trực tiếp: V2 (Trái) vs. V3 5-Department International Studio (Phải)](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/32_V2_VS_V3_5DEPT_EXPERT_COMPARISON.mp4)
 
 ---
 
-## ⚖️ 2. Video Đặt Cạnh Nhau: Bản Cũ V1 (Trái) vs. Bản Mới V2 Senior Engine (Phải)
+## 🔬 2. Bằng Chứng Cải Tiến Của Từng Phòng Ban Trên Dải Kiểm Định `1fps`
 
-![So sánh Trực tiếp: V1 Raw Script (Trái) vs. V2 Senior Compiler Engine (Phải)](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/21_V1_VS_V2_SENIOR_QC_COMPARISON.mp4)
+### ① Cải tiến của Phòng 2 (Weta Prop Master) & Phòng 3 (ASC DP) tại Beat 2 (`0:06 -> 0:09`)
+- **Lỗi cũ ở V2**: Ở `0:06–0:07`, thanh kiếm chuyển từ nằm ngang sang chéo 45 độ làm mũi kiếm bị uốn cong; ở `0:09` bản V1 bị tách đôi chuôi kiếm.
+- **Quy tắc mới (`RULE_PROP_V3_LOCK`)**: Cả `Start Frame` và `End Frame` của Beat 2 đều khóa **CÙNG MỘT GÓC NGHIÊNG 45 ĐỘ**, hướng mắt nhìn sang Phải (`Screen-Right`), hai tay nắm **1 chuôi kiếm thẳng liền mạch (`Single Unbroken Tsuka Hilt`)** và lưỡi kiếm thép thẳng tắp từ giây `0:06` đến `0:09`!
+
+![VES 1fps Strip của Beat 2 V3 (0:06 -> 0:09): Lưỡi kiếm nghiêng 45 độ thẳng cứng 100% và 1 chuôi kiếm liền mạch xuyên suốt](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/beat2_v3_ecu_rigid_45deg_katana_ves_1fps_strip.png)
+
+### ② Cải tiến của Phòng 1 (DGA Action Director) & Phòng 3 (Script Supervisor) tại Beat 3 (`0:10 -> 0:14`)
+- **Lỗi cũ ở V2**: Rồng đứng chính diện giữa màn hình nhìn thẳng vào camera, chưa ăn khớp Trục 180 độ (Trái-Phải) với Beat 4.
+- **Quy tắc mới (`RULE_DGA_V3_LOCK`)**: Khóa chặt **Trục 180 Độ**: Kenji đứng ở tiền cảnh **Bên Trái (`Screen-Left`)** cầm kiếm hướng sang Phải, còn Rồng ở **Bên Phải (`Screen-Right`)** chồm vồ từ **Phải sang Trái** đập nát đèn đá ngay trước mặt Kenji, tạo đà phản công trực tiếp sang Beat 4 (`0:15–0:19`)!
+
+![VES 1fps Strip của Beat 3 V3 (0:10 -> 0:14): Kenji ở bên Trái, Rồng ở bên Phải chồm vồ sang Trái đúng Trục 180 Độ](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/beat3_v3_dragon_lunge_right_to_left_ves_1fps_strip.png)
+
+### ③ Cải tiến của Phòng 1 (DGA Showrunner) & Phòng 2 (Weta Prop Master) tại Beat 5 (`0:20 -> 0:23`)
+- **Mạch Nhân-Quả**: Ngay sau khi Kenji bật nhảy từ Trái sang Phải chém trúng ngực Rồng ở cuối Beat 4 (`0:18–0:19`), sang Beat 5 (`0:20–0:23`) trên ngực Rồng xuất hiện **vết rách giáp chéo nóng chảy rực lửa (`Molten Diagonal Armor Fracture`)** xì khói đen và phát nổ hồ quang điện vàng.
+- **Tự bắt lỗi & Học quy tắc mới (`RULE_PROP_LEARNED_05`)**: Khi thử nghiệm mô tả vết thương bằng cụm từ `"katana slash scar"`, Chuyên gia Weta Prop Master phát hiện AI tự vẽ dư 1 cái chuôi kiếm cắm trên ngực Rồng, nên đã tự động lọc bỏ từ `"katana"` và khóa cứng `"OPEN MOLTEN ARMOR GASH ONLY (NO SWORD STUCK IN CHEST)"`!
+
+![VES 1fps Strip của Beat 5 V3 (0:20 -> 0:23): Vết chém chéo nóng chảy trên ngực Rồng rò rỉ tia lửa điện và phát nổ quá tải](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/beat5_v3_ruptured_chest_reactor_no_sword_ves_1fps_strip.png)
 
 ---
 
-## 🔍 3. Bảng Kiểm Định Từng Giây (`1fps` International QC Contact Sheets — V2 vs. V1)
+## 🔍 3. Bảng Kiểm Định Toàn Bộ 30 Giây Của Bản V3 (`1fps` International QC Contact Sheets)
 
 ````carousel
-![V2 QC Grid 01 (Giây 00 -> 15): Đã cắt bỏ giây lùi của Rồng ở 07s và đoạn lặp rút kiếm ở Shot 2, chuyển thẳng sang cú giẫm chân và vòm kiếm lửa của Samurai đầu trần](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/22_V2_1FPS_QC_GRID_01.png)
+![V3 5-Dept QC Grid 01 (Giây 00 -> 15): Trục 180 độ Trái-Phải và Mạch Nhân-Quả liền mạch tuyệt đối từ Beat 1 -> Beat 2 -> Beat 3 -> Beat 4](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/31_V3_5DEPT_1FPS_QC_GRID_01.png)
 <!-- slide -->
-![V2 QC Grid 02 (Giây 16 -> 29): Cảnh giao chiến đỉnh cao (23s -> 29s) Samurai giữ nguyên 100% ĐẦU TRẦN buộc tóc (không mũ Kabuto) và 1 vỏ kiếm duy nhất](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/22_V2_1FPS_QC_GRID_02.png)
+![V3 5-Dept QC Grid 02 (Giây 16 -> 30): Nhảy chém ngực Rồng (16-19s) -> Vết chém ngực Rồng phát nổ (20-23s) -> Giao kiếm quyết định & Chiến thắng (24-30s)](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/31_V3_5DEPT_1FPS_QC_GRID_02.png)
 <!-- slide -->
-![[Đối chứng Bản Cũ V1] Grid 01 (00s -> 15s): Lỗi rút kiếm lặp 2 lần ở giây 10-13](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/qc_32s_grid_01.png)
+![[Đối chứng Bản V2] Grid 01 (00s -> 15s)](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/22_V2_1FPS_QC_GRID_01.png)
 <!-- slide -->
-![[Đối chứng Bản Cũ V1] Grid 02 (16s -> 31s): Lỗi nhảy lùi ở giây 20 và tự mọc mũ sắt Kabuto + 2 vỏ kiếm ở giây 24-31](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/qc_32s_grid_02.png)
-````
-
----
-
-## 🛡️ 4. Bộ Mỏ Neo Gốc 3 Góc Độ (`#808080`) Được Compiler Tiêm Cứng
-
-````carousel
-![Mỏ neo 1: 3-Panel Reference Sheet — Samurai Kenji](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/01_anchor_samurai_kenji_sheet.png)
-<!-- slide -->
-![Mỏ neo 2: 3-Panel Reference Sheet — Hắc Long Cơ Khí Kuroryu](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/02_anchor_mecha_dragon_sheet.png)
+![[Đối chứng Bản V2] Grid 02 (16s -> 30s)](/home/user/.gemini/antigravity/brain/092f7d00-e0a7-4cec-be77-f8cff1234933/22_V2_1FPS_QC_GRID_02.png)
 ````
