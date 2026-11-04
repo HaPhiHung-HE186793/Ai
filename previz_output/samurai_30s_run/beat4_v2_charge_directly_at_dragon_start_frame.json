@@ -1,0 +1,20 @@
+{
+  "mediaId": "e9b05664-d2eb-405d-8c50-1a56cc2b2359",
+  "filePath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat4_v2_charge_directly_at_dragon_start_frame.png",
+  "refIdsUsed": [
+    "46351645-0b10-4c90-8aee-9aefa18add2a",
+    "26fb13b5-691b-4422-9455-842869f799f9",
+    "a0c4766f-7c90-4408-bee1-fc945d93cfa5"
+  ],
+  "visionAudit": {
+    "pass": true,
+    "details": {
+      "pass": true,
+      "score": 73,
+      "helmetDetected": false,
+      "backTurnedToEnemyDetected": false,
+      "splitGridDetected": false,
+      "reason": " continuity is maintained across all rules. Kenji is bareheaded and directly engages the dragon in a single widescreen shot matching reference designs."
+    }
+  }
+}

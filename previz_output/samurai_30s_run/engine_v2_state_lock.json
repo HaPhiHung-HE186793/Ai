@@ -69,7 +69,16 @@
       "endFrameMediaId": "a51b3c9e-042d-46c4-aa38-f84fae15f7ec",
       "trimStartSec": 0.4,
       "trimEndSec": 5.4
+    },
+    "beat4_v2_charge_directly_at_dragon": {
+      "locked": true,
+      "configHash": "549d8ca257c110ce",
+      "videoPath": "/mnt/data/backup/project_personal/AI/previz_output/samurai_30s_run/beat4_v2_charge_directly_at_dragon_veo31_raw8s.mp4",
+      "startFrameMediaId": "e9b05664-d2eb-405d-8c50-1a56cc2b2359",
+      "endFrameMediaId": "567c3919-482e-4ca1-96a9-d2adffcb51d1",
+      "trimStartSec": 0.2,
+      "trimEndSec": 5.4
     }
   },
-  "lastUpdatedAt": "2026-11-04T03:45:24.010Z"
+  "lastUpdatedAt": "2026-11-04T04:06:25.206Z"
 }

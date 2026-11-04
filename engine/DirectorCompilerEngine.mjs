@@ -327,13 +327,14 @@ export class DirectorCompilerEngine {
       refImages.push({ base64: frameB64, mimeType: 'image/png' });
 
       const checkPrompt = [
-        `You are a strict Hollywood Continuity Supervisor performing a Pre-Flight Keyframe Audit for "${frameName}".`,
+        `You are a strict Hollywood Continuity & Spatial Blocking Supervisor performing a Pre-Flight Keyframe Audit for "${frameName}".`,
         `Compare the candidate keyframe (last image) against the Character/Creature Reference Sheets (first images).`,
-        `Verify these strict continuity rules:`,
+        `Verify these 4 strict rules:`,
         `1. If Samurai KENJI is visible, he MUST be BAREHEADED with tied-back dark hair (NO samurai helmet / NO kabuto / NO mask).`,
-        `2. The frame must be a single widescreen cinematic scene (NOT a 3-panel split grid).`,
-        `3. Subject proportions and armor colors must match the reference sheets.`,
-        `Reply ONLY with valid JSON: {"pass": true, "score": 96, "helmetDetected": false, "splitGridDetected": false, "reason": "..."}`,
+        `2. SPATIAL BLOCKING & 180-DEGREE AXIS: If both Samurai KENJI and Mecha-Dragon KURORYU are in the frame, KENJI MUST be facing TOWARD the Mecha-Dragon in combat engagement (NEVER facing the camera with his back turned to the dragon as if running away!).`,
+        `3. The frame must be a single widescreen cinematic scene (NOT a 3-panel split grid).`,
+        `4. Subject proportions and armor colors must match the reference sheets.`,
+        `Reply ONLY with valid JSON: {"pass": true, "score": 96, "helmetDetected": false, "backTurnedToEnemyDetected": false, "splitGridDetected": false, "reason": "..."}`,
       ].join(' ');
 
       const res = await this.callFlow('generate.text', [{ prompt: checkPrompt, images: refImages.slice(0, 3) }], 2);
@@ -342,9 +343,13 @@ export class DirectorCompilerEngine {
       const e = raw.lastIndexOf('}');
       if (s !== -1 && e > s) {
         const parsed = JSON.parse(raw.slice(s, e + 1));
-        const passed = Boolean(parsed.pass) && !parsed.helmetDetected && !parsed.splitGridDetected;
+        const passed =
+          Boolean(parsed.pass) &&
+          !parsed.helmetDetected &&
+          !parsed.backTurnedToEnemyDetected &&
+          !parsed.splitGridDetected;
         console.log(
-          `      🔍 [Pre-Flight Vision Gate | ${frameName}] ${passed ? '✅ PASS' : '❌ FAIL'} (Score: ${parsed.score || 95}/100 | Helmet: ${Boolean(parsed.helmetDetected)} | Note: ${parsed.reason || 'OK'})`
+          `      🔍 [Pre-Flight Vision Gate | ${frameName}] ${passed ? '✅ PASS' : '❌ FAIL'} (Score: ${parsed.score || 95}/100 | Helmet: ${Boolean(parsed.helmetDetected)} | BackTurned: ${Boolean(parsed.backTurnedToEnemyDetected)} | Note: ${parsed.reason || 'OK'})`
         );
         return { pass: passed, details: parsed };
       }

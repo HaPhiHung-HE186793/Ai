@@ -113,21 +113,22 @@ async function main() {
       trimEndSec: 4.0,
     },
 
-    // BEAT 4: SHOT MỚI V2 (Đầu trần 100%, khóa cả Start Frame & End Frame) — lấy đoạn [2.0s -> 7.4s] khi Kenji xoay người chém vòm lửa về phía Rồng!
+    // BEAT 4 (SURGICAL BLOCKING FIX CHO GIÂY 0:15 -> 0:20):
+    // Khóa chặt Trục 180 Độ (Trái -> Phải): Samurai ở bên Trái lao thẳng VỀ PHÍA RỒNG ở bên Phải (TUYỆT ĐỐI KHÔNG quay lưng vào Rồng chạy về phía camera!)
     {
-      shotId: 'beat4_v2_bareheaded_samurai_sprint',
+      shotId: 'beat4_v2_charge_directly_at_dragon',
       subjects: ['KENJI', 'KURORYU'],
       environmentId: 'KYOTO_SHRINE',
-      cameraLens: '35mm Anamorphic Low-Angle Tracking Shot moving rapidly backward ahead of the charging samurai',
+      cameraLens: '35mm Anamorphic Dynamic Side-Tracking Action Shot following from left to right along the 180-degree axis',
       startFrameActionEn:
-        'In the center foreground, @KENJI (BAREHEADED with tied-back wet dark hair, visible face with vertical scar on left cheek, NO HELMET, wearing matte-black carbon-fiber samurai armor) sprints aggressively forward through splashing Kyoto courtyard puddles toward the camera, gripping his glowing amber plasma katana with both hands at his right side while @KURORYU looms beneath the misty Torii gate behind him.',
+        'On screen-left in three-quarter profile facing strictly RIGHT toward the dragon, @KENJI (BAREHEADED with tied-back wet dark hair, wearing fully armored matte-black carbon-fiber samurai chest armor and cloak, NO HELMET, single scabbard at left hip) sprints aggressively forward from left to right through splashing puddles DIRECTLY TOWARD @KURORYU towering on screen-right beneath the misty Torii gate. Kenji stares directly at the dragon ahead of him, holding his glowing amber plasma katana with both hands ready to strike.',
       endFrameActionEn:
-        'In the foreground, @KENJI (BAREHEADED with tied-back wet dark hair, visible face with vertical scar on left cheek, NO HELMET) leaps forward through the rain, swinging his glowing amber katana diagonally across the frame in a blazing arc of orange sparks and steam.',
+        'On screen-left facing strictly RIGHT toward the dragon, @KENJI (BAREHEADED with tied-back wet dark hair, wearing fully armored matte-black carbon-fiber chest armor, NO HELMET) lunges forward from left to right toward @KURORYU on screen-right, slashing his glowing amber katana forward in a blazing arc of golden sparks aimed directly at the dragon.',
       videoKinematicsEn:
-        '[0.0s-2.5s] The bareheaded samurai sprints explosively forward through the rain-soaked flagstones, boots splashing water high into the air. [2.5s-5.5s] He plants his front foot and unleashes a fierce diagonal slash with his glowing amber plasma katana, slicing through falling rain and sending a crescent wave of golden sparks forward. [5.5s-8.0s] He lands in a low combat stance with steam rising from the glowing blade.',
-      sfxCueEn: 'rapid footsteps splashing in rain puddles, whooshing plasma katana slash, crackling thunder',
-      trimStartSec: 2.8,
-      trimEndSec: 7.8,
+        '[0.0s-2.5s] Obeying the 180-degree axis, the bareheaded samurai on screen-left sprints fiercely from left to right through the rain-soaked flagstones directly toward the towering black mecha-dragon on screen-right. [2.5s-5.5s] Closing the distance, the samurai leaps forward toward the dragon and unleashes an explosive diagonal slash with his glowing amber katana, launching a wave of golden sparks from left to right against the dragon. [5.5s-8.0s] He lands in a low forward-facing combat stance still facing right toward the dragon amidst rising steam.',
+      sfxCueEn: 'rapid footsteps splashing in rain puddles charging forward, whooshing plasma katana slash, roaring dragon ahead',
+      trimStartSec: 0.2,
+      trimEndSec: 5.4,
     },
 
     // BEAT 5 (00:20.4 -> 00:24.0): Nửa sau của Shot 3 (4.4s -> 8.0s) — Rồng phóng tia sét vàng cam (Parallel Cross-Cut xóa sạch vết nhảy ở 4.2s!)
